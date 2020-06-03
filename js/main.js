@@ -98,7 +98,7 @@
         Magnific Popup
     --------------------*/
     $('.video-popup').magnificPopup({
-        type: 'iframe'
+        type: 'iframe',
     });
 
     $('.image-popup').magnificPopup({
