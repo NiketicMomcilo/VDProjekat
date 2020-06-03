@@ -1,30 +1,30 @@
-const stars1 = document.querySelector(".ratings12").children;
-const cistoca = document.querySelector("#iyengarYogaOcena");
-let index1;
+const stars12 = document.querySelector(".ratings12").children;
+const ocenaHatha = document.querySelector("#jogaHatHaOcena");
+let index12;
 
-for(let i=0;i<stars1.length;i++){
-    stars1[i].addEventListener("mouseover",function(){
-        for(let j=0;j<stars1.length;j++){
-            stars1[j].classList.remove("fa-star");
-            stars1[j].classList.add("fa-star-o");
+for(let i=0;i<stars12.length;i++){
+    stars12[i].addEventListener("mouseover",function(){
+        for(let j=0;j<stars12.length;j++){
+            stars12[j].classList.remove("fa-star");
+            stars12[j].classList.add("fa-star-o");
         }
         for(let j=0;j<=i;j++){
-            stars1[j].classList.remove("fa-star-o");
-            stars1[j].classList.add("fa-star");
+            stars12[j].classList.remove("fa-star-o");
+            stars12[j].classList.add("fa-star");
         }
     });
-    stars1[i].addEventListener("click",function(){
-        index1=i;
-        cistoca.value = index1 + 1;
+    stars12[i].addEventListener("click",function(){
+        index12=i;
+        cistoca.value = index12 + 1;
     });
-    stars1[i].addEventListener("mouseout",function(){
-        for(let j=0;j<stars1.length;j++){
-            stars1[j].classList.remove("fa-star");
-            stars1[j].classList.add("fa-star-o");
+    stars12[i].addEventListener("mouseout",function(){
+        for(let j=0;j<stars12.length;j++){
+            stars12[j].classList.remove("fa-star");
+            stars12[j].classList.add("fa-star-o");
         }
-        for(let j=0;j<=index1;j++){
-            stars1[j].classList.remove("fa-star-o");
-            stars1[j].classList.add("fa-star");
+        for(let j=0;j<=index12;j++){
+            stars12[j].classList.remove("fa-star-o");
+            stars12[j].classList.add("fa-star");
         }
     });
 }
