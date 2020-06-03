@@ -234,7 +234,7 @@
                             <input type='hidden' id='iyengarYogaOcena' name='iyengarYogaOcena'>
                             <script type='text/javascript' src='js/ostavi_ocenu_yogaIyengar.js'></script>
                             <textarea placeholder="Leave a comment" value="comment" id="jogaIyengar"></textarea>
-                            <button type="submit" class="c-btn" onclick="addComment('jogaIyengar',document.getElementById('iyengarYogaOcena').value)">Send</button>
+                            <button type="submit" class="c-btn" onclick="addComment('jogaIyengar',document.getElementById('jogaIyengar').value,document.querySelector('#iyengarYogaOcena').value)">Send</button>
                         </form>
                     </div>
                 </div>
@@ -378,7 +378,7 @@
                             <input type='hidden' id='jogaHatHaOcena' name='jogaHatHaOcena'>
                             <script type='text/javascript' src='js/ostavi_ocenu_yogaHatha.js'></script>
                             <textarea placeholder="Leave a comment" value="comment" id="jogaHatHa"></textarea>
-                            <button type="submit" class="c-btn" onclick="addComment('jogaHatHa',document.getElementById('jogaHatHaOcena').value)">Send</button>
+                            <button type="submit" class="c-btn" onclick="addComment('jogaHatHa',document.getElementById('jogaHatHa').value, document.querySelector('#jogaHatHaOcena').value)">Send</button>
                         </form>
                     </div>
                 </div>
@@ -520,7 +520,7 @@
                             <input type='hidden' id='vinyasaYogaOcena' name='vinyasaYogaOcena'>
                             <script type='text/javascript' src='js/ostavi_ocenu_yogaVinyasa.js'></script>
                             <textarea placeholder="Leave a comment" value="comment" id="jogaVinyasa"></textarea>
-                            <button type="submit" class="c-btn" onclick="addComment('jogaVinyasa',document.getElementById('vinyasaYogaOcena').value)">Send</button>
+                            <button type="submit" class="c-btn" onclick="addComment('jogaVinyasa',document.getElementById('vinyasaYogaOcena').value, document.querySelector('#vinyasaYogaOcena').value)">Send</button>
                         </form>
                     </div>
                 </div>
@@ -611,5 +611,7 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/rezervacije.js"></script>
+    
 </body>
 </html>

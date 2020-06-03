@@ -2,24 +2,24 @@ var termini;
 
 var commentsMap = new Map();
 
-var pilatesClassic = ["Odlican trening.", "Super ekipa!"];
-var pilatesStott = ["Odlican trening.", "Super ekipa!"];
-var pilatesReformer = ["Odlican trening.", "Super ekipa!"];
+var pilatesClassic = [["Odlican trening.", "Moma"], ["Super ekipa!","Nidza"]];
+var pilatesStott = [["Odlican trening.", "Moma"], ["Super ekipa!","Nidza"]];
+var pilatesReformer = [["Odlican trening.", "Moma"], ["Super ekipa!","Nidza"]];
 
 
-var coreCrossfit = ["Odlican trening.", "Super ekipa!"];
-var coreGluteCore = ["Odlican trening.", "Super ekipa!"];
-var coreBadAss = ["Odlican trening.", "Super ekipa!"];
+var coreCrossfit = [["Odlican trening.", "Moma"], ["Super ekipa!","Nidza"]];
+var coreGluteCore = [["Odlican trening.", "Moma"], ["Super ekipa!","Nidza"]];
+var coreBadAss = [["Odlican trening.", "Moma"], ["Super ekipa!","Nidza"]];
 
 
-var jogaHatHa = ["Odlican trening.", "Super ekipa!"];
-var jogaIyengar = ["Odlican trening.", "Super ekipa!"];
-var jogaVinyasa = ["Odlican trening.", "Super ekipa!"];
+var jogaHatHa = [["Odlican trening.", 5, "Moma"], ["Super ekipa!", 4,"Nidza"]];
+var jogaIyengar = [["Odlican trening.", 5, "Moma"], ["Super ekipa!", 4,"Nidza"]];
+var jogaVinyasa = [["Odlican trening.", 5, "Moma"], ["Super ekipa!", 4,"Nidza"]];
 
 
-var cardioRowing = ["Odlican trening.", "Super ekipa!"];
-var cardioCycling = ["Odlican trening.", "Super ekipa!"];
-var cardioRunning = ["Odlican trening.", "Super ekipa!"];
+var cardioRowing = [["Odlican trening.", "Moma"], ["Super ekipa!","Nidza"]];
+var cardioCycling = [["Odlican trening.", "Moma"], ["Super ekipa!","Nidza"]];
+var cardioRunning = [["Odlican trening.", "Moma"], ["Super ekipa!","Nidza"]];
 
 
 commentsMap.set('pilatesClassic', pilatesClassic);
@@ -621,6 +621,9 @@ function shuffle(array) {
     return array;
   }
 
-  function addComment(arg){
-    commentsMap.get(arg).push("");
+  function addComment(arg, str, ocena){
+      //console.log(arg);
+      //console.log(str);
+    commentsMap.get(arg).push([str,ocena,localStorage.getItem("username")]);
+    console.log(commentsMap.get(arg));
   }

@@ -15,7 +15,7 @@ for(let i=0;i<stars11.length;i++){
     });
     stars11[i].addEventListener("click",function(){
         index11=i;
-        cistoca.value = index11 + 1;
+        ocenaIyengar.value = index11 + 1;
     });
     stars11[i].addEventListener("mouseout",function(){
         for(let j=0;j<stars11.length;j++){
