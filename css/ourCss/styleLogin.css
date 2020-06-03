@@ -1,5 +1,5 @@
 body {
-    background-image: url(img/hero-slider/hero-3.jpg);
+    background-image: url(../../img/hero-slider/hero-3.jpg);
     display:flex; 
     flex-direction:column; 
    
