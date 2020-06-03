@@ -134,7 +134,7 @@ ol {
 
 .spad {
 	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-bottom: 50px;
 }
 
 .spad-2 {
@@ -1966,8 +1966,8 @@ ol {
 
 .gallery-section {
 	background: #151515;
-	padding-bottom: 70px;
-	padding-top: 95px;
+	padding-bottom: 10px;
+	padding-top: 20px;
 }
 
 .gallery-controls {

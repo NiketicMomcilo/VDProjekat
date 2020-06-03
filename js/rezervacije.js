@@ -14,7 +14,7 @@ var termin1 = {
     };
 var termin2 = {
     naziv: "Pilates",
-    vrsta: "Klasicni",
+    vrsta: "Classic",
     nivo: "lvl 1", 
     max: 10,
     current: 7,
@@ -171,7 +171,7 @@ var termin15 = {
     };
 var termin16 = {
     naziv: "Pilates",
-    vrsta: "Klasicni",
+    vrsta: "Classic",
     nivo: "lvl 1", 
     max: 10,
     current: 6,
@@ -238,7 +238,7 @@ var termin21 = {
     };
 var termin22 = {
     naziv: "Pilates",
-    vrsta: "Klasicni",
+    vrsta: "Classic",
     nivo: "lvl 1", 
     max: 10,
     current: 7,
@@ -395,7 +395,7 @@ var termin35 = {
     };
 var termin36 = {
     naziv: "Pilates",
-    vrsta: "Klasicni",
+    vrsta: "Classic",
     nivo: "lvl 1", 
     max: 10,
     current: 6,
@@ -510,7 +510,7 @@ var terminiIndexi = [
                      6, 26, 36, 56, 86, 96, 106, 116,
                      87, 97,107,117
                     ];
-function onload(){
+function insertClasses(){
     //upisuje sve termine u raspored
     for (let index = 0; index < terminiIndexi.length; index++) {
         let id = "[id='" + terminiIndexi[index] + "']";
