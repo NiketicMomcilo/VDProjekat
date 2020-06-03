@@ -262,6 +262,60 @@ ol {
 	opacity: 0;
 }
 
+.reserve-btn {
+	display: inline-block;
+	font-size: 12px;
+	font-family: "Oswald", sans-serif;
+	font-weight: 600;
+	margin-top:10px;
+	color: #000000;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-align: center;
+	background: #07b601;
+	width: 100px;
+	height: 30px;
+	border-left: 2px solid #07b601;
+	border-right: 2px solid #07b601;
+	border-top: none;
+	border-bottom: none;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background-position: 0 0, 0 100%;
+	background-repeat: no-repeat;
+	background-size: 100% 2px;
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, #07b601), color-stop(0%, #07b601)), -webkit-gradient(linear, left top, right top, from(#e16521), color-stop(0%, #e4381C));
+	background-image: -o-linear-gradient(left, #07b601 100%, #07b601 0%), -o-linear-gradient(left, #07b601 0%, #07b601 0%);
+	background-image: linear-gradient(to right, #07b601 100%, #07b601 0%), linear-gradient(to right, #07b601 0%, #07b601 0%);
+	-webkit-transition-duration: 1000ms;
+	-o-transition-duration: 1000ms;
+	transition-duration: 1000ms;
+	line-height: 38px;
+	position: relative;
+	z-index: 1;
+	border-radius: 4px;
+}
+
+.reserve-btn:after {
+	color: #fff;
+	-webkit-transition-duration: 500ms;
+	-o-transition-duration: 500ms;
+	transition-duration: 500ms;
+	background: #07b601;
+	background: -webkit-gradient(linear, left top, right top, from(#07b601), to(#07b601));
+	background: -o-linear-gradient(left, #07b601, #07b601);
+	background: linear-gradient(to right, #07b601, #07b601);
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	border-radius: 2px;
+	opacity: 0;
+}
+
 /* Preloder */
 
 #preloder {
