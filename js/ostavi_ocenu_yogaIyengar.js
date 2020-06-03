@@ -1,4 +1,4 @@
-const stars1 = document.querySelector(".ratings1").children;
+const stars1 = document.querySelector(".ratings11").children;
 const cistoca = document.querySelector("#iyengarYogaOcena");
 let index1;
 
