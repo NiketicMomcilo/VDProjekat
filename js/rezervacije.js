@@ -1,5 +1,47 @@
 var termini;
 
+var commentsMap = new Map();
+
+var pilatesClassic = ["Odlican trening.", "Super ekipa!"];
+var pilatesStott = ["Odlican trening.", "Super ekipa!"];
+var pilatesReformer = ["Odlican trening.", "Super ekipa!"];
+
+
+var coreCrossfit = ["Odlican trening.", "Super ekipa!"];
+var coreGluteCore = ["Odlican trening.", "Super ekipa!"];
+var coreBadAss = ["Odlican trening.", "Super ekipa!"];
+
+
+var jogaHatHa = ["Odlican trening.", "Super ekipa!"];
+var jogaIyengar = ["Odlican trening.", "Super ekipa!"];
+var jogaVinyasa = ["Odlican trening.", "Super ekipa!"];
+
+
+var cardioRowing = ["Odlican trening.", "Super ekipa!"];
+var cardioCycling = ["Odlican trening.", "Super ekipa!"];
+var cardioRunning = ["Odlican trening.", "Super ekipa!"];
+
+
+commentsMap.set('pilatesClassic', pilatesClassic);
+commentsMap.set('pilatesStott', pilatesStott);
+commentsMap.set('pilatesReformer', pilatesReformer);
+
+
+commentsMap.set('coreCrossfit', coreCrossfit);
+commentsMap.set('coreGluteCore', coreGluteCore);
+commentsMap.set('coreBadAss', coreBadAss);
+
+
+commentsMap.set('jogaHatHa', jogaHatHa);
+commentsMap.set('jogaIyengar', jogaIyengar);
+commentsMap.set('jogaVinyasa', jogaVinyasa);
+
+
+commentsMap.set('cardioRowing', cardioRowing);
+commentsMap.set('cardioCycling', cardioCycling);
+commentsMap.set('cardioRunning', cardioRunning);
+
+var names  = ["Moma", "Nidza", "Coa", "Mina", "Vuk", "Tijana", "Marija", "Veske", "Dule", "Adrijan", "Jelica", "Drazen"];
 
 var termin1 = {
     naziv: "Yoga",
@@ -518,4 +560,67 @@ function insertClasses(){
         a[0].innerHTML = termini[index].naziv;
         a[1].innerHTML = termini[index].vrsta;
     }
+    localStorage.setItem("username", "Coa");
+    for (let index = 0; index < termini.length; index++) {
+        names = shuffle(names);
+        let num = termini[index].current;
+        termini[index].subs = [];
+        for (let i = 0; i <num ; i++ ){
+            termini[index].subs.push(names[i]);
+        }
+    }
 }
+
+function makeReservation(param){
+   //console.log(param.closest("td").id);
+    let id = param.closest("td").id;
+    let index = findIndex(id);
+    
+    
+    if(termini[index].current == termini[index].max){
+        window.alert("Zao nam je ovaj termin je popunjen.")
+        return;
+    }
+
+    for (let i = 0; i < termini[index].subs.length; i++) {
+        if(termini[index].subs[i] == localStorage.getItem("username")){
+            window.alert("Vec ste se prijavili za ovaj termin.");
+            return;
+        }
+    }
+    termini[index].current++;
+    termini[index].subs.push(localStorage.getItem("username"));
+    
+    console.log(termini[index].subs);
+
+}
+function findIndex(id){
+    for (let index = 0; index < terminiIndexi.length; index++) {
+        if(terminiIndexi[index] == id ){
+            return index;
+        }       
+    }
+}
+
+function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+  
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+  
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+  
+      // And swap it with the current element.
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+  
+    return array;
+  }
+
+  function addComment(arg){
+    commentsMap.get(arg).push("");
+  }

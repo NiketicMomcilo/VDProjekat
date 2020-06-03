@@ -284,7 +284,7 @@ ol {
 	background-position: 0 0, 0 100%;
 	background-repeat: no-repeat;
 	background-size: 100% 2px;
-	background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, #07b601), color-stop(0%, #07b601)), -webkit-gradient(linear, left top, right top, from(#e16521), color-stop(0%, #e4381C));
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, #07b601), color-stop(0%, #07b601)), -webkit-gradient(linear, left top, right top, from(#07b601), color-stop(0%, #07b601));
 	background-image: -o-linear-gradient(left, #07b601 100%, #07b601 0%), -o-linear-gradient(left, #07b601 0%, #07b601 0%);
 	background-image: linear-gradient(to right, #07b601 100%, #07b601 0%), linear-gradient(to right, #07b601 0%, #07b601 0%);
 	-webkit-transition-duration: 1000ms;
@@ -3172,3 +3172,16 @@ ol {
 		left: 15%;
 	}
 }
+.dugme{
+	background-color: #69f133;
+	color: #fff;
+	font-family: "Oswald", sans-serif;
+	font-size: 19px;
+	padding: 7px 14px;
+	border-radius: 5px;
+	border: none;
+	margin-top: 15px;
+  }
+  .dugme:hover, .dugme:focus{
+	background-color: #07b601;
+  }
