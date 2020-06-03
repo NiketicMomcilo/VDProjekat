@@ -590,7 +590,7 @@ function makeReservation(param){
     }
     termini[index].current++;
     termini[index].subs.push(localStorage.getItem("username"));
-    
+    window.alert("Dodati ste u ovaj termin.");
     console.log(termini[index].subs);
 
 }
