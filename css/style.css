@@ -37,7 +37,6 @@ body {
 	height: 100%;
 	font-family: "Nunito Sans", sans-serif;
 	-webkit-font-smoothing: antialiased;
-	font-smoothing: antialiased;
 }
 
 h1,
@@ -756,12 +755,30 @@ ol {
 }
 
 .about-text h2 {
-	font-size: 48px;
+	font-size: 50px;
 	font-weight: 500;
 	color: #ffffff;
 	text-transform: uppercase;
 	margin-bottom: 36px;
 }
+
+.about-text h4 {
+	font-size: 40px;
+	font-weight: 300;
+	color: #ffffff;
+	text-transform: uppercase;
+	margin-bottom: 36px;
+}
+
+.about-text h5 {
+	font-size: 30px;
+	font-weight: 200;
+	color: #ffffff;
+	text-transform: uppercase;
+	margin-bottom: 36px;
+}
+
+
 
 .about-text p.short-details {
 	font-size: 20px;
@@ -1513,7 +1530,7 @@ ol {
 
 .map-contact-detalis .map-contact-form h5 {
 	font-size: 20px;
-	color: #000000;
+	color: white;
 	font-weight: 500;
 	text-transform: uppercase;
 	margin-bottom: 20px;
@@ -2836,6 +2853,25 @@ ol {
 	font-weight: 500;
 	margin-bottom: 20px;
 }
+
+.contact-form .ratings1{
+	color:gold;
+}
+
+.contact-form h5 {
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+.contact-form h2 {
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: 200;
+	margin-bottom: 20px;
+}
+
 
 .contact-form form input {
 	width: 100%;
