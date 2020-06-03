@@ -189,11 +189,11 @@
                 <div class="col-lg-12">
                     <div class="contact-form">
                         <h4>COMMENT</h4>
-                        <form action="#">
+                        <form action="#" name="komentarJoga">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <textarea placeholder="Leave a comment"></textarea>
-                                    <button type="submit" class="c-btn">Send</button>
+                                    <textarea placeholder="Leave a comment" value="comment" id="jogaIyengar"></textarea>
+                                    <button type="submit" class="c-btn" onclick="addComment('jogaIyengar',document.getElementById('jogaIyengar').value)">Send</button>
                                 </div>
                             </div>
                         </form>
@@ -296,8 +296,8 @@
                         <form action="#">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <textarea placeholder="Leave a comment"></textarea>
-                                    <button type="submit" class="c-btn">Send</button>
+                                    <textarea placeholder="Leave a comment" value="comment" id="jogaHatHa"></textarea>
+                                    <button type="submit" class="c-btn" onclick="addComment('jogaHatHa',document.getElementById('jogaHatHa').value)">Send</button>
                                 </div>
                             </div>
                         </form>
@@ -398,8 +398,8 @@
                         <form action="#">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <textarea placeholder="Leave a comment"></textarea>
-                                    <button type="submit" class="c-btn">Send</button>
+                                    <textarea placeholder="Leave a comment" value="comment" id="jogaVinyasa"></textarea>
+                                    <button type="submit" class="c-btn" onclick="addComment('jogaVinyasa',document.getElementById('jogaVinyasa').value)">Send</button>
                                 </div>
                             </div>
                         </form>
@@ -492,5 +492,7 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/rezervacije.js"></script>
+    
 </body>
 </html>
