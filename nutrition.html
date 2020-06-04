@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <script src="js/jsPDF/dist/jspdf.min.js"></script>
 </head>
 <body>
     <!-- Page Preloder -->
@@ -81,14 +83,36 @@
     </section>
     <!-- Breadcrumb End -->
 
-    <!-- Apointment Section Begin -->
+    <!-- About Section Begin -->
+    <section class="home-about spad" id='nutritionContent'>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-text">
+                        <h2>NUTRITION</h2>
+                        <p class="short-details">CrossFit is a cutting-edge functional fitness system that can help
+                            everyday men.</p>
+                        <p class="long-details">Good nutrition is an important part of leading a healthy lifestyle. Combined with physical activity, your diet can help you to reach and maintain a healthy weight, reduce your risk of chronic diseases (like heart disease and cancer), and promote your overall health.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-img">
+                        <img src="img/programs/nutrition/nutrition-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Appointment Section Begin -->
     <section class="blog-single-section">
         <div class="class-title set-bg" data-setbg="img/feature/feature-2.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <div class="section-title">
-                            <h2 style='color:black;'>BOOK AN APOINTMENT WITH NUTRICIONIST</h2>
+                            <h2 style='color:black;'>BOOK AN APPOINTMENT WITH NUTRITIONIST</h2>
                             <p  style='color:black;'>Good nutrition is an important part of leading a healthy lifestyle. Combined with physical activity, your diet can help you to reach and maintain a healthy weight, reduce your risk of chronic diseases (like heart disease and cancer), and promote your overall health.</p>
                             </br>
                         </div>
@@ -97,21 +121,24 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="leave-comment-form">
-                            <h4>Leave A Comment</h4>
-                            <form action="#">
+                            <h4>RESERVE YOUR APPOINTMENT</h4>
+                            <form action="">
                                 <div class="row">
-                                    <div class="col-lg-4">
-                                        <input type="text" placeholder="Name">
+                                    <div class="col-lg-3">
+                                        <input type="text" placeholder="Name" id="NameNutrition">
                                     </div>
-                                    <div class="col-lg-4">
-                                        <input type="text" placeholder="Email">
+                                    <div class="col-lg-3">
+                                        <input type="text" placeholder="Email" id="EmailNutrition">
                                     </div>
-                                    <div class="col-lg-4">
-                                        <input type="text" placeholder="Phone">
+                                    <div class="col-lg-3">
+                                        <input type="text" placeholder="Phone" id="PhoneNutrition">
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <input type="date" placeholder="Date" id = "DateNutrition">
                                     </div>
                                     <div class="col-lg-12">
-                                        <textarea placeholder="Comment"></textarea>
-                                        <button type="submit" class="leave-btn">Post Comment</button>
+                                        <textarea placeholder="Describe your problem..." id='AboutNutrition'></textarea>
+                                        <button type="submit" class="leave-btn" onclick="nutritionAppointment(document.getElementById('NameNutrition').value,document.getElementById('EmailNutrition').value,document.getElementById('PhoneNutrition').value,document.getElementById('DateNutrition').value,document.getElementById('AboutNutrition').value)">Reserve your appointment</button>
                                     </div>
                                 </div>
                             </form>
@@ -121,7 +148,7 @@
             </div>
         </div>
     </section>
-    <!-- Apointment Section End-->
+    <!-- Appointment Section End-->
 
     <!-- Footer Section Begin -->
     <footer class="footer-section">
@@ -205,5 +232,6 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/rezervacije.js"></script>
 </body>
 </html>

@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+
 </head>
 <body>
     <!-- Page Preloder -->
@@ -44,7 +45,7 @@
                     <nav class="mainmenu mobile-menu">
                         <ul>
                             <li><a href="./index.html">Home</a></li>
-                            <li class="active"><a href="./services.html">Services</a>
+                            <li class="active"><a href="#">Services</a>
                                 <ul class="dropdown">
                                     <li><a href="./workouts.html">Workouts</a></li>   
                                     <li><a href="./nutrition.html">Nutrition</a></li>
@@ -81,6 +82,28 @@
     </section>
     <!-- Breadcrumb End -->
 
+    <!-- About Section Begin -->
+    <section class="home-about spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-img">
+                        <img src="img/programs/massages/massages-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-text">
+                        <h2>MASSAGES</h2>
+                        <p class="short-details">Feel like your best self again. Keep your body working, it'll thank you later</p>
+                        <p class="long-details">Good nutrition is an important part of leading a healthy lifestyle. Combined with physical activity, your diet can help you to reach and maintain a healthy weight, reduce your risk of chronic diseases (like heart disease and cancer), and promote your overall health.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
     <!-- Apointment Section Begin -->
     <section class="blog-single-section">
         <div class="class-title set-bg" data-setbg="img/feature/feature-3.jpg">
@@ -97,21 +120,24 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="leave-comment-form">
-                            <h4>Leave A Comment</h4>
-                            <form action="#">
+                            <h4>RESERVE YOUR MASSAGE</h4>
+                            <form action="">
                                 <div class="row">
-                                    <div class="col-lg-4">
-                                        <input type="text" placeholder="Name">
+                                    <div class="col-lg-3">
+                                        <input type="text" placeholder="Name" id="NameMassage">
                                     </div>
-                                    <div class="col-lg-4">
-                                        <input type="text" placeholder="Email">
+                                    <div class="col-lg-3">
+                                        <input type="text" placeholder="Email" id = "EmailMassage">
                                     </div>
-                                    <div class="col-lg-4">
-                                        <input type="text" placeholder="Phone">
+                                    <div class="col-lg-3">
+                                        <input type="text" placeholder="Phone" id = "PhoneMassage">
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <input type="date" placeholder="Date" id = "DateMassage">
                                     </div>
                                     <div class="col-lg-12">
-                                        <textarea placeholder="Comment"></textarea>
-                                        <button type="submit" class="leave-btn">Post Comment</button>
+                                        <textarea placeholder="Describe your problem..." id='AboutMassage'></textarea>
+                                        <button type="submit" class="leave-btn" onclick="nutritionApointment(document.getElementById('NameMassage').value,document.getElementById('EmailMassage').value,document.getElementById('PhoneMassage').value,document.getElementById('DateMassage').value,document.getElementById('AboutMassage').value)">Reserve your massage</button>
                                     </div>
                                 </div>
                             </form>
