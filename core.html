@@ -17,7 +17,7 @@
 
      <script src="js/rate_training.js"></script>
 </head>
-<body>
+<body onload="showInitialCommentsCore()">
     <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>
@@ -190,25 +190,21 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="about-text text-left">
-                        <p>USERNAME</p>
-                        <p class="long-details">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <template >
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="about-text text-left">
+                            <p></p>
+                            <p class="long-details"></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="about-text text-left">
-                        <p>USERNAME</p>
-                        <p class="long-details">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                </div>
-            </div>
+            </template>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="contact-form" style='padding-bottom:20px;'>
+                        <span onclick="showContent('CommentSectioncoreCrossfit','coreCrossfit')" id='moreComments'><i class="fa fa-angle-double-down" ></i>  MORE</p>
+                        <span id="CommentSectioncoreCrossfit"></span>
                         <form action="">
                             <h4>COMMENT</h4>
                             <div class='ratings31'>
@@ -326,23 +322,9 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="about-text text-left">
-                        <p>USERNAME</p>
-                        <p class="long-details">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="about-text text-left">
-                        <p>USERNAME</p>
-                        <p class="long-details">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
                     <div class="contact-form" style='padding-bottom:20px;'>
+                        <span onclick="showContent('CommentSectioncoreGluteCore','coreGluteCore')" id='moreComments'><i class="fa fa-angle-double-down" ></i>  MORE</p>
+                        <span id="CommentSectioncoreGluteCore"></span>
                         <form action="">
                             <h4>COMMENT</h4>
                             <div class='ratings32'>
@@ -457,23 +439,9 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="about-text text-left">
-                        <p>USERNAME</p>
-                        <p class="long-details">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="about-text text-left">
-                        <p>USERNAME</p>
-                        <p class="long-details">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
                     <div class="contact-form" style='padding-bottom:20px;'>
+                        <span onclick="showContent('CommentSectioncoreBadAss','coreBadAss')" id='moreComments'><i class="fa fa-angle-double-down" ></i>  MORE</p>
+                        <span id="CommentSectioncoreBadAss"></span>
                         <form action="">
                             <h4>COMMENT</h4>
                             <div class='ratings33'>

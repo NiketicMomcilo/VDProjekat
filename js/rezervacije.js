@@ -2,24 +2,24 @@ var termini;
 
 var commentsMap = new Map();
 
-var pilatesClassic = [["Odlican trening.", "Moma"], ["Super ekipa!","Nidza"]];
-var pilatesStott = [["Odlican trening.", "Moma"], ["Super ekipa!","Nidza"]];
-var pilatesReformer = [["Odlican trening.", "Moma"], ["Super ekipa!","Nidza"]];
+var pilatesClassic = [["Odlican trening.", 5, "Moma", false], ["Super ekipa!", 4,"Nidza", false]];
+var pilatesStott = [["Odlican trening.", 5, "Moma", false], ["Super ekipa!", 4,"Nidza", false]];
+var pilatesReformer = [["Odlican trening.", 5, "Moma", false], ["Super ekipa!", 4,"Nidza", false]];
 
 
-var coreCrossfit = [["Odlican trening.", "Moma"], ["Super ekipa!","Nidza"]];
-var coreGluteCore = [["Odlican trening.", "Moma"], ["Super ekipa!","Nidza"]];
-var coreBadAss = [["Odlican trening.", "Moma"], ["Super ekipa!","Nidza"]];
+var coreCrossfit = [["Odlican trening.", 5, "Moma", false], ["Super ekipa!", 4,"Nidza", false]];
+var coreGluteCore = [["Odlican trening.", 5, "Moma", false], ["Super ekipa!", 4,"Nidza", false]];
+var coreBadAss = [["Odlican trening.", 5, "Moma", false], ["Super ekipa!", 4,"Nidza", false]];
 
 
-var jogaHatHa = [["Odlican trening.", 5, "Moma"], ["Super ekipa!", 4,"Nidza"]];
-var jogaIyengar = [["Odlican trening.", 5, "Moma"], ["Super ekipa!", 4,"Nidza"]];
-var jogaVinyasa = [["Odlican trening.", 5, "Moma"], ["Super ekipa!", 4,"Nidza"]];
+var jogaHatHa = [["Odlican trening.", 5, "Moma", false], ["Super ekipa!", 4,"Nidza", false]];
+var jogaIyengar = [["Odlican trening.", 5, "Moma", false], ["Super ekipa!", 4,"Nidza", false]];
+var jogaVinyasa = [["Odlican trening.", 5, "Moma", false], ["Super ekipa!", 4,"Nidza", false]];
 
 
-var cardioRowing = [["Odlican trening.", "Moma"], ["Super ekipa!","Nidza"]];
-var cardioCycling = [["Odlican trening.", "Moma"], ["Super ekipa!","Nidza"]];
-var cardioRunning = [["Odlican trening.", "Moma"], ["Super ekipa!","Nidza"]];
+var cardioRowing = [["Odlican trening.", 5, "Moma", false], ["Super ekipa!", 4,"Nidza", false]];
+var cardioCycling = [["Odlican trening.", 5, "Moma", false], ["Super ekipa!", 4,"Nidza", false]];
+var cardioRunning = [["Odlican trening.", 5, "Moma", false], ["Super ekipa!", 4,"Nidza", false]];
 
 
 commentsMap.set('pilatesClassic', pilatesClassic);
@@ -552,6 +552,8 @@ var terminiIndexi = [
                      6, 26, 36, 56, 86, 96, 106, 116,
                      87, 97,107,117
                     ];
+
+    //poziva se na onload index body
 function insertClasses(){
     //upisuje sve termine u raspored
     for (let index = 0; index < terminiIndexi.length; index++) {
@@ -627,3 +629,148 @@ function shuffle(array) {
     commentsMap.get(arg).push([str,ocena,localStorage.getItem("username")]);
     console.log(commentsMap.get(arg));
   }
+
+function showContent(id, trening) {
+    for (let i = 0; i < commentsMap.get(trening).length ;i++) {
+        if(commentsMap.get(trening)[i][3] == false){
+            var temp = document.getElementsByTagName("template")[0];
+            var clon = temp.content.cloneNode(true);
+            clon.children[0].children[0].children[0].children[0].innerHTML = commentsMap.get(trening)[i][2];
+            clon.children[0].children[0].children[0].children[1].innerHTML = commentsMap.get(trening)[i][0]; 
+            commentsMap.get(trening)[i][3] = true;
+            
+            document.getElementById(id).appendChild(clon);
+        }
+    }
+}
+//onload za jogu
+function showInitialCommentsJoga(){
+    for (var m in commentsMap){
+        for (var i=0 ; i<commentsMap[m].length; i++){
+            commentsMap[m][i][3] = false;
+        }
+    } 
+    //stavi prvi komentar za iyengarJoga
+    var temp = document.getElementsByTagName("template")[0];
+    var clon = temp.content.cloneNode(true);
+    clon.children[0].children[0].children[0].children[0].innerHTML = commentsMap.get('jogaIyengar')[0][2];
+    clon.children[0].children[0].children[0].children[1].innerHTML = commentsMap.get('jogaIyengar')[0][0]; 
+    commentsMap.get('jogaIyengar')[0][3] = true;
+    document.getElementById('CommentSectionjogaIyengar').appendChild(clon);
+
+    //stavi prvi komentar za jogaHatHa
+    var temp = document.getElementsByTagName("template")[0];
+    var clon = temp.content.cloneNode(true);
+    clon.children[0].children[0].children[0].children[0].innerHTML = commentsMap.get('jogaHatHa')[0][2];
+    clon.children[0].children[0].children[0].children[1].innerHTML = commentsMap.get('jogaHatHa')[0][0]; 
+    commentsMap.get('jogaHatHa')[0][3] = true;
+    document.getElementById('CommentSectionjogaHatHa').appendChild(clon);
+
+    //stavi prvi komentar za jogaVinyasa
+    var temp = document.getElementsByTagName("template")[0];
+    var clon = temp.content.cloneNode(true);
+    clon.children[0].children[0].children[0].children[0].innerHTML = commentsMap.get('jogaVinyasa')[0][2];
+    clon.children[0].children[0].children[0].children[1].innerHTML = commentsMap.get('jogaVinyasa')[0][0]; 
+    commentsMap.get('jogaVinyasa')[0][3] = true;
+    document.getElementById('CommentSectionjogaVinyasa').appendChild(clon);
+
+}
+
+//onload za cardio
+function showInitialCommentsCardio(){
+    for (var m in commentsMap){
+        for (var i=0 ; i<commentsMap[m].length; i++){
+            commentsMap[m][i][3] = false;
+        }
+    } 
+    //stavi prvi komentar za iyengarJoga
+    var temp = document.getElementsByTagName("template")[0];
+    var clon = temp.content.cloneNode(true);
+    clon.children[0].children[0].children[0].children[0].innerHTML = commentsMap.get('cardioRowing')[0][2];
+    clon.children[0].children[0].children[0].children[1].innerHTML = commentsMap.get('cardioRowing')[0][0]; 
+    commentsMap.get('cardioRowing')[0][3] = true;
+    document.getElementById('CommentSectioncardioRowing').appendChild(clon);
+
+    //stavi prvi komentar za jogaHatHa
+    var temp = document.getElementsByTagName("template")[0];
+    var clon = temp.content.cloneNode(true);
+    clon.children[0].children[0].children[0].children[0].innerHTML = commentsMap.get('cardioCycling')[0][2];
+    clon.children[0].children[0].children[0].children[1].innerHTML = commentsMap.get('cardioCycling')[0][0]; 
+    commentsMap.get('cardioCycling')[0][3] = true;
+    document.getElementById('CommentSectioncardioCycling').appendChild(clon);
+
+    //stavi prvi komentar za jogaVinyasa
+    var temp = document.getElementsByTagName("template")[0];
+    var clon = temp.content.cloneNode(true);
+    clon.children[0].children[0].children[0].children[0].innerHTML = commentsMap.get('cardioRunning')[0][2];
+    clon.children[0].children[0].children[0].children[1].innerHTML = commentsMap.get('cardioRunning')[0][0]; 
+    commentsMap.get('cardioRunning')[0][3] = true;
+    document.getElementById('CommentSectioncardioRunning').appendChild(clon);
+
+}
+
+//onload za core
+function showInitialCommentsCore(){
+    for (var m in commentsMap){
+        for (var i=0 ; i<commentsMap[m].length; i++){
+            commentsMap[m][i][3] = false;
+        }
+    } 
+    //stavi prvi komentar za iyengarJoga
+    var temp = document.getElementsByTagName("template")[0];
+    var clon = temp.content.cloneNode(true);
+    clon.children[0].children[0].children[0].children[0].innerHTML = commentsMap.get('coreCrossfit')[0][2];
+    clon.children[0].children[0].children[0].children[1].innerHTML = commentsMap.get('coreCrossfit')[0][0]; 
+    commentsMap.get('coreCrossfit')[0][3] = true;
+    document.getElementById('CommentSectioncoreCrossfit').appendChild(clon);
+
+    //stavi prvi komentar za jogaHatHa
+    var temp = document.getElementsByTagName("template")[0];
+    var clon = temp.content.cloneNode(true);
+    clon.children[0].children[0].children[0].children[0].innerHTML = commentsMap.get('coreGluteCore')[0][2];
+    clon.children[0].children[0].children[0].children[1].innerHTML = commentsMap.get('coreGluteCore')[0][0]; 
+    commentsMap.get('coreGluteCore')[0][3] = true;
+    document.getElementById('CommentSectioncoreGluteCore').appendChild(clon);
+
+    //stavi prvi komentar za jogaVinyasa
+    var temp = document.getElementsByTagName("template")[0];
+    var clon = temp.content.cloneNode(true);
+    clon.children[0].children[0].children[0].children[0].innerHTML = commentsMap.get('coreBadAss')[0][2];
+    clon.children[0].children[0].children[0].children[1].innerHTML = commentsMap.get('coreBadAss')[0][0]; 
+    commentsMap.get('coreBadAss')[0][3] = true;
+    document.getElementById('CommentSectioncoreBadAss').appendChild(clon);
+
+}
+
+//onload za pilates
+function showInitialCommentsPilates(){
+    for (var m in commentsMap){
+        for (var i=0 ; i<commentsMap[m].length; i++){
+            commentsMap[m][i][3] = false;
+        }
+    } 
+    //stavi prvi komentar za iyengarJoga
+    var temp = document.getElementsByTagName("template")[0];
+    var clon = temp.content.cloneNode(true);
+    clon.children[0].children[0].children[0].children[0].innerHTML = commentsMap.get('pilatesClassic')[0][2];
+    clon.children[0].children[0].children[0].children[1].innerHTML = commentsMap.get('pilatesClassic')[0][0]; 
+    commentsMap.get('pilatesClassic')[0][3] = true;
+    document.getElementById('CommentSectionpilatesClassic').appendChild(clon);
+
+    //stavi prvi komentar za jogaHatHa
+    var temp = document.getElementsByTagName("template")[0];
+    var clon = temp.content.cloneNode(true);
+    clon.children[0].children[0].children[0].children[0].innerHTML = commentsMap.get('pilatesStott')[0][2];
+    clon.children[0].children[0].children[0].children[1].innerHTML = commentsMap.get('pilatesStott')[0][0]; 
+    commentsMap.get('pilatesStott')[0][3] = true;
+    document.getElementById('CommentSectionpilatesStott').appendChild(clon);
+
+    //stavi prvi komentar za jogaVinyasa
+    var temp = document.getElementsByTagName("template")[0];
+    var clon = temp.content.cloneNode(true);
+    clon.children[0].children[0].children[0].children[0].innerHTML = commentsMap.get('pilatesReformer')[0][2];
+    clon.children[0].children[0].children[0].children[1].innerHTML = commentsMap.get('pilatesReformer')[0][0]; 
+    commentsMap.get('pilatesReformer')[0][3] = true;
+    document.getElementById('CommentSectionpilatesReformer').appendChild(clon);
+
+}
