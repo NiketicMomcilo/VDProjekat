@@ -14,6 +14,8 @@
      <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
      <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
      <link rel="stylesheet" href="css/style.css" type="text/css">    
+
+     <script src="js/rate_training.js"></script>
 </head>
 <body>
     <!-- Page Preloder -->
@@ -85,7 +87,7 @@
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <div class="section-title">
-                            <h2>Our CORE PROGRAMMS</h2>
+                            <h2>Our CORE PROGRAMS</h2>
                             <p>Our core programs can help you discover new training techniques and exercises
                                 <br />that offer a dynamic and efficient full-body workout.</p>
                         </div>
@@ -109,7 +111,7 @@
                     <div class="modal fade" id="crossfitCoreVideo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/aIPQd8mKlHE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/aIPQd8mKlHE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                             </div>
                         </div>
                     </div>
@@ -178,27 +180,55 @@
     </section>
     <!-- Gallery Section End -->
 
-    <!-- Comment Section Begin-->
-    <section class="contact-section" style="padding-bottom:30px;">
+    <!-- Comments Section Begin -->
+    <section class='contact-section'>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="contact-form">
-                        <h4>COMMENT</h4>
-                        <form action="#">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <textarea placeholder="Leave a comment"></textarea>
-                                    <button type="submit" class="c-btn">Send</button>
-                                </div>
+                    <div class="about-text text-left">
+                        <h2>COMMENTS</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="about-text text-left">
+                        <p>USERNAME</p>
+                        <p class="long-details">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="about-text text-left">
+                        <p>USERNAME</p>
+                        <p class="long-details">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="contact-form" style='padding-bottom:20px;'>
+                        <form action="">
+                            <h4>COMMENT</h4>
+                            <div class='ratings31'>
+                                <span class='fa fa-star-o'></span>
+                                <span class='fa fa-star-o'></span>
+                                <span class='fa fa-star-o'></span>
+                                <span class='fa fa-star-o'></span>
+                                <span class='fa fa-star-o'></span>
                             </div>
+                            <input type='hidden' id='crossfitCoreOcena' name='crossfitCoreOcena'>
+                            <script> rateTraining(document.querySelector(".ratings31").children, document.querySelector("#crossfitCoreOcena"));</script>
+                            <textarea placeholder="Leave a comment" value="comment" id="coreCrossfit"></textarea>
+                            <button type="submit" class="c-btn" onclick="addComment('coreCrossfit',document.getElementById('coreCrossfit').value,document.querySelector('#crossfitCoreOcena').value)">Send</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Comment Section End-->
+    <!-- Comment Section End -->
 
     <!-- Video Section Begin -->
     <section class="video-section set-bg" data-setbg="img/programs/workouts/core/glutecore-core-video-bg.jpg">
@@ -213,7 +243,7 @@
                     <div class="modal fade" id="glutecoreCoreVideo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/cz1gh_aYn5k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/cz1gh_aYn5k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                             </div>
                         </div>
                     </div>
@@ -284,27 +314,55 @@
     </section>
     <!-- Gallery Section End -->
 
-    <!-- Comment Section Begin-->
-    <section class="contact-section"  style="padding-bottom:30px;">
+    <!-- Comments Section Begin -->
+    <section class='contact-section'>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="contact-form">
-                        <h4>COMMENT</h4>
-                        <form action="#">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <textarea placeholder="Leave a comment"></textarea>
-                                    <button type="submit" class="c-btn">Send</button>
-                                </div>
+                    <div class="about-text text-left">
+                        <h2>COMMENTS</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="about-text text-left">
+                        <p>USERNAME</p>
+                        <p class="long-details">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="about-text text-left">
+                        <p>USERNAME</p>
+                        <p class="long-details">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="contact-form" style='padding-bottom:20px;'>
+                        <form action="">
+                            <h4>COMMENT</h4>
+                            <div class='ratings32'>
+                                <span class='fa fa-star-o'></span>
+                                <span class='fa fa-star-o'></span>
+                                <span class='fa fa-star-o'></span>
+                                <span class='fa fa-star-o'></span>
+                                <span class='fa fa-star-o'></span>
                             </div>
+                            <input type='hidden' id='glutecoreCoreOcena' name='glutecoreCoreOcena'>
+                            <script> rateTraining(document.querySelector(".ratings32").children, document.querySelector("#glutecoreCoreOcena"));</script>
+                            <textarea placeholder="Leave a comment" value="comment" id="coreGluteCore"></textarea>
+                            <button type="submit" class="c-btn" onclick="addComment('coreGluteCore',document.getElementById('coreGluteCore').value,document.querySelector('#glutecoreCoreOcena').value)">Send</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Comment Section End-->
+    <!-- Comment Section End -->
 
     <!-- Video Section Begin -->
     <section class="video-section set-bg" data-setbg="img/programs/workouts/core/badass-core-video-bg.jpg">
@@ -318,7 +376,7 @@
                     <div class="modal fade" id="baddassCoreVideo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Bd8tEXDTutA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/Bd8tEXDTutA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                             </div>
                         </div>
                     </div>
@@ -387,27 +445,55 @@
     </section>
     <!-- Gallery Section End -->
 
-    <!-- Comment Section Begin-->
-    <section class="contact-section" style="padding-bottom:30px;">
+    <!-- Comments Section Begin -->
+    <section class='contact-section'>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="contact-form">
-                        <h4>COMMENT</h4>
-                        <form action="#">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <textarea placeholder="Leave a comment"></textarea>
-                                    <button type="submit" class="c-btn">Send</button>
-                                </div>
+                    <div class="about-text text-left">
+                        <h2>COMMENTS</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="about-text text-left">
+                        <p>USERNAME</p>
+                        <p class="long-details">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="about-text text-left">
+                        <p>USERNAME</p>
+                        <p class="long-details">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="contact-form" style='padding-bottom:20px;'>
+                        <form action="">
+                            <h4>COMMENT</h4>
+                            <div class='ratings33'>
+                                <span class='fa fa-star-o'></span>
+                                <span class='fa fa-star-o'></span>
+                                <span class='fa fa-star-o'></span>
+                                <span class='fa fa-star-o'></span>
+                                <span class='fa fa-star-o'></span>
                             </div>
+                            <input type='hidden' id='badassCoreOcena' name='badassCoreOcena'>
+                            <script> rateTraining(document.querySelector(".ratings33").children, document.querySelector("#badassCoreOcena"));</script>
+                            <textarea placeholder="Leave a comment" value="comment" id="coreBadAss"></textarea>
+                            <button type="submit" class="c-btn" onclick="addComment('coreBadAss',document.getElementById('coreBadAss').value,document.querySelector('#badassCoreOcena').value)">Send</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Comment Section End-->
+    <!-- Comment Section End -->
 
     <!-- Footer Section Begin -->
     <footer class="footer-section">
@@ -491,5 +577,6 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/rezervacije.js"></script>
 </body>
 </html>

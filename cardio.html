@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <script src="js/rate_training.js"></script>
 </head>
 <body>
     <!-- Page Preloder -->
@@ -113,7 +115,7 @@
                     <div class="modal fade" id="rowingCardioVideo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/VE663Kg0c00" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/VE663Kg0c00" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                             </div>
                         </div>
                     </div>
@@ -184,27 +186,55 @@
     </section>
     <!-- Gallery Section End -->
 
-    <!-- Comment Section Begin-->
-    <section class="contact-section" style="padding-bottom:30px;">
+    <!-- Comments Section Begin -->
+    <section class='contact-section'>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="contact-form">
-                        <h4>COMMENT</h4>
-                        <form action="#">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <textarea placeholder="Leave a comment"></textarea>
-                                    <button type="submit" class="c-btn">Send</button>
-                                </div>
+                    <div class="about-text text-left">
+                        <h2>COMMENTS</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="about-text text-left">
+                        <p>USERNAME</p>
+                        <p class="long-details">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="about-text text-left">
+                        <p>USERNAME</p>
+                        <p class="long-details">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="contact-form" style='padding-bottom:20px;'>
+                        <form action="">
+                            <h4>COMMENT</h4>
+                            <div class='ratings41'>
+                                <span class='fa fa-star-o'></span>
+                                <span class='fa fa-star-o'></span>
+                                <span class='fa fa-star-o'></span>
+                                <span class='fa fa-star-o'></span>
+                                <span class='fa fa-star-o'></span>
                             </div>
+                            <input type='hidden' id='rowingCardioOcena' name='rowingCardioOcena'>
+                            <script> rateTraining(document.querySelector(".ratings41").children, document.querySelector("#rowingCardioOcena"));</script>
+                            <textarea placeholder="Leave a comment" value="comment" id="cardioRowing"></textarea>
+                            <button type="submit" class="c-btn" onclick="addComment('cardioRowing',document.getElementById('cardioRowing').value,document.querySelector('#rowingCardioOcena').value)">Send</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Comment Section End-->
+    <!-- Comment Section End -->
 
     <!-- Video Section Begin -->
     <section class="video-section set-bg" data-setbg="img/programs/workouts/cardio/cycling-cardio-video-bg.jpg">
@@ -219,7 +249,7 @@
                     <div class="modal fade" id="cyclingCardioVideo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/QaGKy6MIcv4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/QaGKy6MIcv4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                             </div>
                         </div>
                     </div>
@@ -288,27 +318,55 @@
     </section>
     <!-- Gallery Section End -->
 
-    <!-- Comment Section Begin-->
-    <section class="contact-section"  style="padding-bottom:30px;">
+    <!-- Comments Section Begin -->
+    <section class='contact-section'>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="contact-form">
-                        <h4>COMMENT</h4>
-                        <form action="#">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <textarea placeholder="Leave a comment"></textarea>
-                                    <button type="submit" class="c-btn">Send</button>
-                                </div>
+                    <div class="about-text text-left">
+                        <h2>COMMENTS</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="about-text text-left">
+                        <p>USERNAME</p>
+                        <p class="long-details">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="about-text text-left">
+                        <p>USERNAME</p>
+                        <p class="long-details">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="contact-form" style='padding-bottom:20px;'>
+                        <form action="">
+                            <h4>COMMENT</h4>
+                            <div class='ratings42'>
+                                <span class='fa fa-star-o'></span>
+                                <span class='fa fa-star-o'></span>
+                                <span class='fa fa-star-o'></span>
+                                <span class='fa fa-star-o'></span>
+                                <span class='fa fa-star-o'></span>
                             </div>
+                            <input type='hidden' id='cyclingCardioOcena' name='cyclingCardioOcena'>
+                            <script> rateTraining(document.querySelector(".ratings42").children, document.querySelector("#cyclingCardioOcena"));</script>
+                            <textarea placeholder="Leave a comment" value="comment" id="cardioCycling"></textarea>
+                            <button type="submit" class="c-btn" onclick="addComment('cardioCycling',document.getElementById('cardioCycling').value,document.querySelector('#cyclingCardioOcena').value)">Send</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Comment Section End-->
+    <!-- Comment Section End -->
 
     <!-- Video Section Begin -->
     <section class="video-section set-bg" data-setbg="img/programs/workouts/cardio/running-cardio-video-bg.jpg">
@@ -322,7 +380,7 @@
                     <div class="modal fade" id="runningCardioVideo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/CNfI2Lj5X6Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/CNfI2Lj5X6Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                             </div>
                         </div>
                     </div>
@@ -391,27 +449,55 @@
     </section>
     <!-- Gallery Section End -->
 
-    <!-- Comment Section Begin-->
-    <section class="contact-section" style="padding-bottom:30px;">
+    <!-- Comments Section Begin -->
+    <section class='contact-section'>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="contact-form">
-                        <h4>COMMENT</h4>
-                        <form action="#">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <textarea placeholder="Leave a comment"></textarea>
-                                    <button type="submit" class="c-btn">Send</button>
-                                </div>
+                    <div class="about-text text-left">
+                        <h2>COMMENTS</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="about-text text-left">
+                        <p>USERNAME</p>
+                        <p class="long-details">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="about-text text-left">
+                        <p>USERNAME</p>
+                        <p class="long-details">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="contact-form" style='padding-bottom:20px;'>
+                        <form action="">
+                            <h4>COMMENT</h4>
+                            <div class='ratings43'>
+                                <span class='fa fa-star-o'></span>
+                                <span class='fa fa-star-o'></span>
+                                <span class='fa fa-star-o'></span>
+                                <span class='fa fa-star-o'></span>
+                                <span class='fa fa-star-o'></span>
                             </div>
+                            <input type='hidden' id='runningCardioOcena' name='runningCardioOcena'>
+                            <script> rateTraining(document.querySelector(".ratings43").children, document.querySelector("#runningCardioOcena"));</script>
+                            <textarea placeholder="Leave a comment" value="comment" id="cardioRunning"></textarea>
+                            <button type="submit" class="c-btn" onclick="addComment('cardioRunning',document.getElementById('cardioRunning').value,document.querySelector('#runningCardioOcena').value)">Send</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Comment Section End-->
+    <!-- Comment Section End -->
 
     <!-- Footer Section Begin -->
     <footer class="footer-section">
@@ -495,5 +581,6 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/rezervacije.js"></script>
 </body>
 </html>
