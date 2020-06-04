@@ -52,7 +52,7 @@ var termin1 = {
     startTime: 10,
     startAndFinishTime: "10:00 - 11:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin2 = {
     naziv: "Pilates",
@@ -63,7 +63,7 @@ var termin2 = {
     startTime: 12,
     startAndFinishTime: "12:00 - 13:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin3 = {
     naziv: "Cardio",
@@ -74,7 +74,7 @@ var termin3 = {
     startTime: 16,
     startAndFinishTime: "16:00 - 17:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin4 = {
     naziv: "Core",
@@ -85,7 +85,7 @@ var termin4 = {
     startTime: 17,
     startAndFinishTime: "18:00 - 19:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin5 = {
     naziv: "Core",
@@ -96,7 +96,7 @@ var termin5 = {
     startTime: 19,
     startAndFinishTime: "20:00 - 21:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin6 = {
     naziv: "Cardio",
@@ -107,7 +107,7 @@ var termin6 = {
     startTime: 21,
     startAndFinishTime: "21:00 - 22:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 
     ///////UTORAK
@@ -120,7 +120,7 @@ var termin7 = {
     startTime: 10,
     startAndFinishTime: "10:00 - 11:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin8 = {
     naziv: "Yoga",
@@ -131,7 +131,7 @@ var termin8 = {
     startTime: 11,
     startAndFinishTime: "11:00 - 12:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin9 = {
     naziv: "Pilates",
@@ -142,7 +142,7 @@ var termin9 = {
     startTime: 14,
     startAndFinishTime: "14:00 - 15:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin10 = {
     naziv: "Core",
@@ -153,7 +153,7 @@ var termin10 = {
     startTime: 17,
     startAndFinishTime: "18:00 - 19:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin11 = {
     naziv: "Core",
@@ -164,7 +164,7 @@ var termin11 = {
     startTime: 19,
     startAndFinishTime: "20:00 - 21:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin12 = {
     naziv: "Cardio",
@@ -175,19 +175,19 @@ var termin12 = {
     startTime: 21,
     startAndFinishTime: "21:00 - 22:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 /////SREDA///////
 var termin13 = {
     naziv: "Pilates",
     vrsta: "Reformer",
-    nivo: "lvl 1", 
+    nivo: "lvl 2", 
     max: 10,
     current: 6,
     startTime: 10,
     startAndFinishTime: "10:00 - 11:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin14 = {
     naziv: "Yoga",
@@ -198,18 +198,18 @@ var termin14 = {
     startTime: 12,
     startAndFinishTime: "12:00 - 13:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin15 = {
     naziv: "Yoga",
     vrsta: "Hat-ha",
-    nivo: "lvl 2", 
+    nivo: "lvl 1", 
     max: 10,
     current: 4,
     startTime: 13,
     startAndFinishTime: "13:00 - 14:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin16 = {
     naziv: "Pilates",
@@ -220,7 +220,7 @@ var termin16 = {
     startTime: 15,
     startAndFinishTime: "15:00 - 16:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin17 = {
     naziv: "Cardio",
@@ -231,7 +231,7 @@ var termin17 = {
     startTime: 18,
     startAndFinishTime: "18:00 - 19:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin18 = {
     naziv: "Core",
@@ -242,7 +242,7 @@ var termin18 = {
     startTime: 19,
     startAndFinishTime: "19:00 - 20:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin19 = {
     naziv: "Core",
@@ -253,7 +253,7 @@ var termin19 = {
     startTime: 20,
     startAndFinishTime: "20:00 - 21:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin20 = {
     naziv: "Cardio",
@@ -264,7 +264,7 @@ var termin20 = {
     startTime: 21,
     startAndFinishTime: "21:00 - 22:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };  
     /////CETVRTAK/////      
 var termin21 = {
@@ -276,7 +276,7 @@ var termin21 = {
     startTime: 10,
     startAndFinishTime: "10:00 - 11:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin22 = {
     naziv: "Pilates",
@@ -287,18 +287,18 @@ var termin22 = {
     startTime: 12,
     startAndFinishTime: "12:00 - 13:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin23 = {
     naziv: "Cardio",
-    vrsta: "Rowing",
+    vrsta: "Running",
     nivo: "lvl 5", 
     max: 10,
     current: 2,
     startTime: 16,
     startAndFinishTime: "16:00 - 17:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin24 = {
     naziv: "Core",
@@ -309,7 +309,7 @@ var termin24 = {
     startTime: 17,
     startAndFinishTime: "18:00 - 19:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin25 = {
     naziv: "Core",
@@ -320,7 +320,7 @@ var termin25 = {
     startTime: 19,
     startAndFinishTime: "20:00 - 21:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin26 = {
     naziv: "Cardio",
@@ -331,7 +331,7 @@ var termin26 = {
     startTime: 21,
     startAndFinishTime: "21:00 - 22:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };   
     /////////PETAK//////
 var termin27 = {
@@ -343,7 +343,7 @@ var termin27 = {
     startTime: 10,
     startAndFinishTime: "10:00 - 11:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin28 = {
     naziv: "Yoga",
@@ -354,7 +354,7 @@ var termin28 = {
     startTime: 11,
     startAndFinishTime: "11:00 - 12:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin29 = {
     naziv: "Pilates",
@@ -365,18 +365,18 @@ var termin29 = {
     startTime: 14,
     startAndFinishTime: "14:00 - 15:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin30 = {
     naziv: "Core",
     vrsta: "Cycling",
-    nivo: "lvl 4", 
+    nivo: "lvl 5", 
     max: 10,
     current: 9,
     startTime: 17,
     startAndFinishTime: "18:00 - 19:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin31 = {
     naziv: "Core",
@@ -387,31 +387,31 @@ var termin31 = {
     startTime: 19,
     startAndFinishTime: "20:00 - 21:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin32 = {
     naziv: "Cardio",
     vrsta: "GluteCore",
-    nivo: "lvl 5", 
+    nivo: "lvl 4", 
     max: 10,
     current: 3,
     startTime: 21,
     startAndFinishTime: "21:00 - 22:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     }; 
 
 ///////SUBOTA////////
 var termin33 = {
     naziv: "Pilates",
     vrsta: "Reformer",
-    nivo: "lvl 1", 
+    nivo: "lvl 2", 
     max: 10,
     current: 6,
     startTime: 10,
     startAndFinishTime: "10:00 - 11:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin34 = {
     naziv: "Yoga",
@@ -422,18 +422,18 @@ var termin34 = {
     startTime: 12,
     startAndFinishTime: "12:00 - 13:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin35 = {
     naziv: "Yoga",
     vrsta: "Hat-ha",
-    nivo: "lvl 2", 
+    nivo: "lvl 1", 
     max: 10,
     current: 4,
     startTime: 13,
     startAndFinishTime: "13:00 - 14:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin36 = {
     naziv: "Pilates",
@@ -444,7 +444,7 @@ var termin36 = {
     startTime: 15,
     startAndFinishTime: "15:00 - 16:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin37 = {
     naziv: "Cardio",
@@ -455,18 +455,18 @@ var termin37 = {
     startTime: 18,
     startAndFinishTime: "18:00 - 19:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin38 = {
     naziv: "Core",
     vrsta: "Crossfit",
-    nivo: "lvl 4", 
+    nivo: "lvl 5", 
     max: 10,
     current: 7,
     startTime: 19,
     startAndFinishTime: "19:00 - 20:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin39 = {
     naziv: "Core",
@@ -477,18 +477,18 @@ var termin39 = {
     startTime: 20,
     startAndFinishTime: "20:00 - 21:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin40 = {
     naziv: "Cardio",
     vrsta: "GluteCore",
-    nivo: "lvl 5", 
+    nivo: "lvl 4", 
     max: 10,
     current: 3,
     startTime: 21,
     startAndFinishTime: "21:00 - 22:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };  
 //////NEDELJA//////
 var termin41 = {
@@ -500,18 +500,18 @@ var termin41 = {
     startTime: 18,
     startAndFinishTime: "18:00 - 19:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin42 = {
     naziv: "Core",
-    vrsta: "GluteCore",
+    vrsta: "BadAss",
     nivo: "lvl 4", 
     max: 10,
     current: 7,
     startTime: 19,
     startAndFinishTime: "19:00 - 20:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin43 = {
     naziv: "Core",
@@ -522,7 +522,7 @@ var termin43 = {
     startTime: 20,
     startAndFinishTime: "20:00 - 21:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };
 var termin44 = {
     naziv: "Cardio",
@@ -533,7 +533,7 @@ var termin44 = {
     startTime: 21,
     startAndFinishTime: "21:00 - 22:00",
     duration: 1,
-    subs: ["moma" ,"nidza"]
+    subs: [""]
     };  
 var termini= [termin1, termin2, termin3, termin4, termin5,
               termin7, termin8, termin9, termin11, termin12,
@@ -593,7 +593,7 @@ function makeReservation(param){
     termini[index].current++;
     termini[index].subs.push(localStorage.getItem("username"));
     window.alert("Dodati ste u ovaj termin.");
-    console.log(termini[index].subs);
+    //console.log(termini[index].subs);
 
 }
 function findIndex(id){
@@ -622,14 +622,14 @@ function shuffle(array) {
   
     return array;
   }
-
-  function addComment(arg, str, ocena){
-      //console.log(arg);
-      //console.log(str);
-    commentsMap.get(arg).push([str,ocena,localStorage.getItem("username"), false]);
-    console.log(commentsMap.get(arg));
-  }
-
+//dodavanje komentara
+function addComment(arg, str, ocena){
+    //console.log(arg);
+    //console.log(str);
+commentsMap.get(arg).push([str,ocena,localStorage.getItem("username"), false]);
+//console.log(commentsMap.get(arg));
+}
+//prikazivanje ostalih komentara
 function showContent(id, trening) {
     for (let i = 0; i < commentsMap.get(trening).length ;i++) {
         if(commentsMap.get(trening)[i][3] == false){
@@ -773,4 +773,38 @@ function showInitialCommentsPilates(){
     commentsMap.get('pilatesReformer')[0][3] = true;
     document.getElementById('CommentSectionpilatesReformer').appendChild(clon);
 
+}
+
+function calculateAvgRaiting(id){
+    var ret = 0;
+    for (let i = 0; i < commentsMap.get(id).length; i++) {
+        ret+= commentsMap.get(id)[i][1];
+    }
+    return ret/commentsMap.get(id).length;
+}
+
+/*
+OVO SU TI ARGUMENTI KAD BUDES POZIVAO funkciju getLvl
+
+Hat-ha
+Classic
+Rowing
+GluteCore
+Cycling
+Crossfit
+Iyengar
+Reformer
+Stoti
+Vinyasa
+BadAss
+Running
+
+*/
+function getLvl(id){
+    for (let i = 0; i < termini.length; i++) {
+        if(termini[i].naziv == id){
+            return termini[i].nivo;
+        }
+        
+    }
 }
