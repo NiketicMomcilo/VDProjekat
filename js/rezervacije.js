@@ -2,24 +2,24 @@ var termini;
 
 var commentsMap = new Map();
 
-var pilatesClassic = [["Odlican trening.", "Moma"], ["Super ekipa!","Nidza"]];
-var pilatesStott = [["Odlican trening.", "Moma"], ["Super ekipa!","Nidza"]];
-var pilatesReformer = [["Odlican trening.", "Moma"], ["Super ekipa!","Nidza"]];
+var pilatesClassic = [["Odlican trening.", 5, "Moma", false], ["Super ekipa!", 4,"Nidza", false]];
+var pilatesStott = [["Odlican trening.", 5, "Moma", false], ["Super ekipa!", 4,"Nidza", false]];
+var pilatesReformer = [["Odlican trening.", 5, "Moma", false], ["Super ekipa!", 4,"Nidza", false]];
 
 
-var coreCrossfit = [["Odlican trening.", "Moma"], ["Super ekipa!","Nidza"]];
-var coreGluteCore = [["Odlican trening.", "Moma"], ["Super ekipa!","Nidza"]];
-var coreBadAss = [["Odlican trening.", "Moma"], ["Super ekipa!","Nidza"]];
+var coreCrossfit = [["Odlican trening.", 5, "Moma", false], ["Super ekipa!", 4,"Nidza", false]];
+var coreGluteCore = [["Odlican trening.", 5, "Moma", false], ["Super ekipa!", 4,"Nidza", false]];
+var coreBadAss = [["Odlican trening.", 5, "Moma", false], ["Super ekipa!", 4,"Nidza", false]];
 
 
-var jogaHatHa = [["Odlican trening.", 5, "Moma"], ["Super ekipa!", 4,"Nidza"]];
-var jogaIyengar = [["Odlican trening.", 5, "Moma"], ["Super ekipa!", 4,"Nidza"]];
-var jogaVinyasa = [["Odlican trening.", 5, "Moma"], ["Super ekipa!", 4,"Nidza"]];
+var jogaHatHa = [["Odlican trening.", 5, "Moma", false], ["Super ekipa!", 4,"Nidza", false]];
+var jogaIyengar = [["Odlican trening.", 5, "Moma", false], ["Super ekipa!", 4,"Nidza", false]];
+var jogaVinyasa = [["Odlican trening.", 5, "Moma", false], ["Super ekipa!", 4,"Nidza", false]];
 
 
-var cardioRowing = [["Odlican trening.", "Moma"], ["Super ekipa!","Nidza"]];
-var cardioCycling = [["Odlican trening.", "Moma"], ["Super ekipa!","Nidza"]];
-var cardioRunning = [["Odlican trening.", "Moma"], ["Super ekipa!","Nidza"]];
+var cardioRowing = [["Odlican trening.", 5, "Moma", false], ["Super ekipa!", 4,"Nidza", false]];
+var cardioCycling = [["Odlican trening.", 5, "Moma", false], ["Super ekipa!", 4,"Nidza", false]];
+var cardioRunning = [["Odlican trening.", 5, "Moma", false], ["Super ekipa!", 4,"Nidza", false]];
 
 
 commentsMap.set('pilatesClassic', pilatesClassic);
@@ -59,7 +59,7 @@ var termin2 = {
     vrsta: "Classic",
     nivo: "lvl 1", 
     max: 10,
-    current: 10,
+    current: 7,
     startTime: 12,
     startAndFinishTime: "12:00 - 13:00",
     duration: 1,
@@ -81,7 +81,7 @@ var termin4 = {
     vrsta: "GluteCore",
     nivo: "lvl 4", 
     max: 10,
-    current: 10,
+    current: 9,
     startTime: 17,
     startAndFinishTime: "18:00 - 19:00",
     duration: 1,
@@ -103,7 +103,7 @@ var termin6 = {
     vrsta: "Crossfit",
     nivo: "lvl 5", 
     max: 10,
-    current: 10,
+    current: 3,
     startTime: 21,
     startAndFinishTime: "21:00 - 22:00",
     duration: 1,
@@ -138,7 +138,7 @@ var termin9 = {
     vrsta: "Stoti",
     nivo: "lvl 2", 
     max: 10,
-    current: 10,
+    current: 3,
     startTime: 14,
     startAndFinishTime: "14:00 - 15:00",
     duration: 1,
@@ -160,7 +160,7 @@ var termin11 = {
     vrsta: "Crossfit",
     nivo: "lvl 5", 
     max: 10,
-    current: 10,
+    current: 3,
     startTime: 19,
     startAndFinishTime: "20:00 - 21:00",
     duration: 1,
@@ -205,7 +205,7 @@ var termin15 = {
     vrsta: "Hat-ha",
     nivo: "lvl 2", 
     max: 10,
-    current: 10,
+    current: 4,
     startTime: 13,
     startAndFinishTime: "13:00 - 14:00",
     duration: 1,
@@ -238,7 +238,7 @@ var termin18 = {
     vrsta: "GluteCore",
     nivo: "lvl 4", 
     max: 10,
-    current: 10,
+    current: 7,
     startTime: 19,
     startAndFinishTime: "19:00 - 20:00",
     duration: 1,
@@ -272,7 +272,7 @@ var termin21 = {
     vrsta: "Hat-ha",
     nivo: "lvl 1", 
     max: 10,
-    current: 10,
+    current: 4,
     startTime: 10,
     startAndFinishTime: "10:00 - 11:00",
     duration: 1,
@@ -339,7 +339,7 @@ var termin27 = {
     vrsta: "Iyengar",
     nivo: "lvl 2", 
     max: 10,
-    current: 10,
+    current: 3,
     startTime: 10,
     startAndFinishTime: "10:00 - 11:00",
     duration: 1,
@@ -372,7 +372,7 @@ var termin30 = {
     vrsta: "Cycling",
     nivo: "lvl 4", 
     max: 10,
-    current: 10,
+    current: 9,
     startTime: 17,
     startAndFinishTime: "18:00 - 19:00",
     duration: 1,
@@ -394,7 +394,7 @@ var termin32 = {
     vrsta: "GluteCore",
     nivo: "lvl 5", 
     max: 10,
-    current: 10,
+    current: 3,
     startTime: 21,
     startAndFinishTime: "21:00 - 22:00",
     duration: 1,
@@ -418,7 +418,7 @@ var termin34 = {
     vrsta: "Vinyasa",
     nivo: "lvl 2", 
     max: 10,
-    current: 10,
+    current: 3,
     startTime: 12,
     startAndFinishTime: "12:00 - 13:00",
     duration: 1,
@@ -462,7 +462,7 @@ var termin38 = {
     vrsta: "Crossfit",
     nivo: "lvl 4", 
     max: 10,
-    current: 10,
+    current: 7,
     startTime: 19,
     startAndFinishTime: "19:00 - 20:00",
     duration: 1,
@@ -484,7 +484,7 @@ var termin40 = {
     vrsta: "GluteCore",
     nivo: "lvl 5", 
     max: 10,
-    current: 10,
+    current: 3,
     startTime: 21,
     startAndFinishTime: "21:00 - 22:00",
     duration: 1,
@@ -518,7 +518,7 @@ var termin43 = {
     vrsta: "Cycling",
     nivo: "lvl 5", 
     max: 10,
-    current: 10,
+    current: 8,
     startTime: 20,
     startAndFinishTime: "20:00 - 21:00",
     duration: 1,
@@ -553,6 +553,7 @@ var terminiIndexi = [
                      87, 97,107,117
                     ];
 
+    //poziva se na onload index body
 function insertClasses(){
     //upisuje sve termine u raspored
     for (let index = 0; index < terminiIndexi.length; index++) {
@@ -560,13 +561,8 @@ function insertClasses(){
         let a = document.querySelector(id).children;
         a[0].innerHTML = termini[index].naziv;
         a[1].innerHTML = termini[index].vrsta;
-        if(termini[index].current<termini[index].max){
-            a[2].classList.remove('hide');
-            a[2].classList.add('show');
-        } 
     }
     localStorage.setItem("username", "Coa");
-
     for (let index = 0; index < termini.length; index++) {
         names = shuffle(names);
         let num = termini[index].current;
@@ -632,4 +628,102 @@ function shuffle(array) {
       //console.log(str);
     commentsMap.get(arg).push([str,ocena,localStorage.getItem("username")]);
     console.log(commentsMap.get(arg));
+  }
+
+function showContent(id, trening) {
+    for (let i = 0; i < commentsMap.get(trening).length ;i++) {
+        if(commentsMap.get(trening)[i][3] == false){
+            var temp = document.getElementsByTagName("template")[0];
+            var clon = temp.content.cloneNode(true);
+            clon.children[0].children[0].children[0].children[0].innerHTML = commentsMap.get(trening)[i][2];
+            clon.children[0].children[0].children[0].children[1].innerHTML = commentsMap.get(trening)[i][0]; 
+            commentsMap.get(trening)[i][3] = true;
+            
+            document.getElementById(id).appendChild(clon);
+        }
+    }
+}
+function enableAllComentsOnLoad(){
+
+}
+function showInitialComments(){
+    for (var m in commentsMap){
+        for (var i=0 ; i<commentsMap[m].length; i++){
+            commentsMap[m][i][3] = false;
+        }
+    } 
+    //stavi prvi komentar za iyengarJoga
+    var temp = document.getElementsByTagName("template")[0];
+    var clon = temp.content.cloneNode(true);
+    clon.children[0].children[0].children[0].children[0].innerHTML = commentsMap.get('jogaIyengar')[0][2];
+    clon.children[0].children[0].children[0].children[1].innerHTML = commentsMap.get('jogaIyengar')[0][0]; 
+    commentsMap.get('jogaIyengar')[0][3] = true;
+    document.getElementById('CommentSectionjogaIyengar').appendChild(clon);
+
+    //stavi prvi komentar za jogaHatHa
+    var temp = document.getElementsByTagName("template")[0];
+    var clon = temp.content.cloneNode(true);
+    clon.children[0].children[0].children[0].children[0].innerHTML = commentsMap.get('jogaHatHa')[0][2];
+    clon.children[0].children[0].children[0].children[1].innerHTML = commentsMap.get('jogaHatHa')[0][0]; 
+    commentsMap.get('jogaHatHa')[0][3] = true;
+    document.getElementById('CommentSectionjogaHatHa').appendChild(clon);
+
+    //stavi prvi komentar za jogaHatHa
+    var temp = document.getElementsByTagName("template")[0];
+    var clon = temp.content.cloneNode(true);
+    clon.children[0].children[0].children[0].children[0].innerHTML = commentsMap.get('jogaVinyasa')[0][2];
+    clon.children[0].children[0].children[0].children[1].innerHTML = commentsMap.get('jogaVinyasa')[0][0]; 
+    commentsMap.get('jogaVinyasa')[0][3] = true;
+    document.getElementById('CommentSectionjogaVinyasa').appendChild(clon);
+
+}
+
+function nutritionAppointment(imeVal,emailVal,telefonVal,datumVal,opisVal){
+    var nutritionObj = {
+        ime: imeVal,
+        email: emailVal,
+        phone: telefonVal, 
+        datum: datumVal,
+        opis: opisVal,
+    };
+
+    var doc = new jsPDF();
+    doc.setFont('courier');
+    doc.setFontType('bold');
+    doc.text(20,20,"THANK YOU FOR MAKING AN APPOINTMENT!")
+
+    doc.setFontType('normal');
+    doc.text(20,30,"Appointment information:");
+    doc.text(20,40,"Name: " + imeVal);
+    doc.text(20,50,"Email: " + emailVal);
+    doc.text(20,60,"Phone: " + telefonVal);
+    doc.text(20,70,"Date: " + datumVal);
+    doc.text(20,80,"Your question: " + opisVal); 
+
+    doc.save('nutrition_appointment.pdf');
+    console.log(nutritionObj);
+  }
+
+  function reserveMassage(imeVal,emailVal,telefonVal,datumVal,opisVal){
+    var massageObj = {
+        ime: imeVal,
+        email: emailVal,
+        phone: telefonVal, 
+        datum: datumVal,
+        opis: opisVal,
+    };
+
+    var doc = new jsPDF();
+    doc.setFont('courier');
+    doc.setFontType('bold');
+    doc.text(20,20,"THANK YOU FOR MAKING AN APPOINTMENT!")
+
+    doc.setFontType('normal');
+    doc.text(20,30,"Appointment information:");
+    doc.text(20,40,"Name: " + imeVal);
+    doc.text(20,50,"Email: " + emailVal);
+    doc.text(20,60,"Phone: " + telefonVal);
+    doc.text(20,70,"Date: " + datumVal);
+    doc.text(20,80,"Your question: " + opisVal); 
+    doc.save('massage_confirm.pdf');
   }

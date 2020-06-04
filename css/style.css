@@ -2978,6 +2978,12 @@ ol {
 	border: 1px solid #131313;
 }
 
+#moreComments {
+	font-size:17px;
+	color:#e16521;
+	font-family: "Oswald", sans-serif;
+}
+
 .contact-form form textarea::-webkit-input-placeholder {
 	font-weight: 600;
 }
@@ -3013,7 +3019,7 @@ ol {
 	background: linear-gradient(45deg, #e16521, #e4381C);
 	padding: 12px 40px;
 	border: none;
-	font-family: "Oswald", sans-serif;
+	
 	border: 1px solid #000000;
 	border-radius: 2px;
 }

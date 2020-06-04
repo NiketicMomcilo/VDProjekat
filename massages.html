@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+
 </head>
 <body>
     <!-- Page Preloder -->
@@ -135,8 +136,8 @@
                                         <input type="date" placeholder="Date" id = "DateMassage">
                                     </div>
                                     <div class="col-lg-12">
-                                        <textarea placeholder="Describe your problem..."></textarea>
-                                        <button type="submit" class="leave-btn">Reserve your apointment</button>
+                                        <textarea placeholder="Describe your problem..." id='AboutMassage'></textarea>
+                                        <button type="submit" class="leave-btn" onclick="nutritionApointment(document.getElementById('NameMassage').value,document.getElementById('EmailMassage').value,document.getElementById('PhoneMassage').value,document.getElementById('DateMassage').value,document.getElementById('AboutMassage').value)">Reserve your massage</button>
                                     </div>
                                 </div>
                             </form>
