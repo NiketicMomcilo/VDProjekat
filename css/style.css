@@ -3251,6 +3251,7 @@ ol {
 		left: 15%;
 	}
 }
+
 .dugme{
 	background-color: #69f133;
 	color: #fff;
@@ -3263,4 +3264,11 @@ ol {
   }
   .dugme:hover, .dugme:focus{
 	background-color: #07b601;
+  }
+
+  .hide{
+	  visibility:hidden;
+  }
+  .show{
+	  visibility: initial;
   }

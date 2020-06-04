@@ -59,7 +59,7 @@ var termin2 = {
     vrsta: "Classic",
     nivo: "lvl 1", 
     max: 10,
-    current: 7,
+    current: 10,
     startTime: 12,
     startAndFinishTime: "12:00 - 13:00",
     duration: 1,
@@ -81,7 +81,7 @@ var termin4 = {
     vrsta: "GluteCore",
     nivo: "lvl 4", 
     max: 10,
-    current: 9,
+    current: 10,
     startTime: 17,
     startAndFinishTime: "18:00 - 19:00",
     duration: 1,
@@ -103,7 +103,7 @@ var termin6 = {
     vrsta: "Crossfit",
     nivo: "lvl 5", 
     max: 10,
-    current: 3,
+    current: 10,
     startTime: 21,
     startAndFinishTime: "21:00 - 22:00",
     duration: 1,
@@ -138,7 +138,7 @@ var termin9 = {
     vrsta: "Stoti",
     nivo: "lvl 2", 
     max: 10,
-    current: 3,
+    current: 10,
     startTime: 14,
     startAndFinishTime: "14:00 - 15:00",
     duration: 1,
@@ -160,7 +160,7 @@ var termin11 = {
     vrsta: "Crossfit",
     nivo: "lvl 5", 
     max: 10,
-    current: 3,
+    current: 10,
     startTime: 19,
     startAndFinishTime: "20:00 - 21:00",
     duration: 1,
@@ -205,7 +205,7 @@ var termin15 = {
     vrsta: "Hat-ha",
     nivo: "lvl 2", 
     max: 10,
-    current: 4,
+    current: 10,
     startTime: 13,
     startAndFinishTime: "13:00 - 14:00",
     duration: 1,
@@ -238,7 +238,7 @@ var termin18 = {
     vrsta: "GluteCore",
     nivo: "lvl 4", 
     max: 10,
-    current: 7,
+    current: 10,
     startTime: 19,
     startAndFinishTime: "19:00 - 20:00",
     duration: 1,
@@ -272,7 +272,7 @@ var termin21 = {
     vrsta: "Hat-ha",
     nivo: "lvl 1", 
     max: 10,
-    current: 4,
+    current: 10,
     startTime: 10,
     startAndFinishTime: "10:00 - 11:00",
     duration: 1,
@@ -339,7 +339,7 @@ var termin27 = {
     vrsta: "Iyengar",
     nivo: "lvl 2", 
     max: 10,
-    current: 3,
+    current: 10,
     startTime: 10,
     startAndFinishTime: "10:00 - 11:00",
     duration: 1,
@@ -372,7 +372,7 @@ var termin30 = {
     vrsta: "Cycling",
     nivo: "lvl 4", 
     max: 10,
-    current: 9,
+    current: 10,
     startTime: 17,
     startAndFinishTime: "18:00 - 19:00",
     duration: 1,
@@ -394,7 +394,7 @@ var termin32 = {
     vrsta: "GluteCore",
     nivo: "lvl 5", 
     max: 10,
-    current: 3,
+    current: 10,
     startTime: 21,
     startAndFinishTime: "21:00 - 22:00",
     duration: 1,
@@ -418,7 +418,7 @@ var termin34 = {
     vrsta: "Vinyasa",
     nivo: "lvl 2", 
     max: 10,
-    current: 3,
+    current: 10,
     startTime: 12,
     startAndFinishTime: "12:00 - 13:00",
     duration: 1,
@@ -462,7 +462,7 @@ var termin38 = {
     vrsta: "Crossfit",
     nivo: "lvl 4", 
     max: 10,
-    current: 7,
+    current: 10,
     startTime: 19,
     startAndFinishTime: "19:00 - 20:00",
     duration: 1,
@@ -484,7 +484,7 @@ var termin40 = {
     vrsta: "GluteCore",
     nivo: "lvl 5", 
     max: 10,
-    current: 3,
+    current: 10,
     startTime: 21,
     startAndFinishTime: "21:00 - 22:00",
     duration: 1,
@@ -518,7 +518,7 @@ var termin43 = {
     vrsta: "Cycling",
     nivo: "lvl 5", 
     max: 10,
-    current: 8,
+    current: 10,
     startTime: 20,
     startAndFinishTime: "20:00 - 21:00",
     duration: 1,
@@ -552,6 +552,7 @@ var terminiIndexi = [
                      6, 26, 36, 56, 86, 96, 106, 116,
                      87, 97,107,117
                     ];
+
 function insertClasses(){
     //upisuje sve termine u raspored
     for (let index = 0; index < terminiIndexi.length; index++) {
@@ -559,8 +560,13 @@ function insertClasses(){
         let a = document.querySelector(id).children;
         a[0].innerHTML = termini[index].naziv;
         a[1].innerHTML = termini[index].vrsta;
+        if(termini[index].current<termini[index].max){
+            a[2].classList.remove('hide');
+            a[2].classList.add('show');
+        } 
     }
     localStorage.setItem("username", "Coa");
+
     for (let index = 0; index < termini.length; index++) {
         names = shuffle(names);
         let num = termini[index].current;
