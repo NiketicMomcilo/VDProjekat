@@ -790,7 +790,7 @@ ol {
 
 .about-text p.long-details {
 	color: #ffffff;
-	margin-bottom: 40px;
+	margin-bottom: 25px;
 }
 
 .about-text .primary-btn.about-btn:after {
@@ -2863,6 +2863,39 @@ ol {
 }
 
 .contact-form .ratings13{
+	color:gold;
+}
+.contact-form .ratings21{
+	color:gold;
+}
+
+.contact-form .ratings22{
+	color:gold;
+}
+
+.contact-form .ratings23{
+	color:gold;
+}
+.contact-form .ratings31{
+	color:gold;
+}
+
+.contact-form .ratings32{
+	color:gold;
+}
+
+.contact-form .ratings33{
+	color:gold;
+}
+.contact-form .ratings41{
+	color:gold;
+}
+
+.contact-form .ratings42{
+	color:gold;
+}
+
+.contact-form .ratings43{
 	color:gold;
 }
 

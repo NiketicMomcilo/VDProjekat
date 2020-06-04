@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <script src="js/rate_training.js"></script>
 </head>
 <body>
     <!-- Page Preloder -->
@@ -195,33 +197,22 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="about-text text-left">
-                        <h5>USERNAME</h5>
-                        <p class="long-details">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                        </p>
+                        <p>USERNAME</p>
+                        <p class="long-details">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="about-text text-left">
-                        <h5>USERNAME</h5>
-                        <p class="long-details">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                        </p>
+                        <p>USERNAME</p>
+                        <p class="long-details">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="about-text text-left">
-                        <h5>USERNAME</h5>
-                        <p class="long-details">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="contact-form">
+                    <div class="contact-form" style='padding-bottom:20px;'>
                         <form action="">
                             <h4>COMMENT</h4>
                             <div class='ratings11'>
@@ -232,7 +223,7 @@
                                 <span class='fa fa-star-o'></span>
                             </div>
                             <input type='hidden' id='iyengarYogaOcena' name='iyengarYogaOcena'>
-                            <script type='text/javascript' src='js/ostavi_ocenu_yogaIyengar.js'></script>
+                            <script> rateTraining(document.querySelector(".ratings11").children, document.querySelector("#iyengarYogaOcena"));</script>
                             <textarea placeholder="Leave a comment" value="comment" id="jogaIyengar"></textarea>
                             <button type="submit" class="c-btn" onclick="addComment('jogaIyengar',document.getElementById('jogaIyengar').value,document.querySelector('#iyengarYogaOcena').value)">Send</button>
                         </form>
@@ -339,7 +330,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="about-text text-left">
-                        <h5>USERNAME</h5>
+                        <p>USERNAME</p>
                         <p class="long-details">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                         </p>
                     </div>
@@ -348,7 +339,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="about-text text-left">
-                        <h5>USERNAME</h5>
+                        <p>USERNAME</p>
                         <p class="long-details">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                         </p>
                     </div>
@@ -356,17 +347,8 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="about-text text-left">
-                        <h5>USERNAME</h5>
-                        <p class="long-details">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="contact-form">
-                        <form action="">
+                    <div class="contact-form" style='padding-bottom:20px;'>
+                        <form action=""> 
                             <h4>COMMENT</h4>
                             <div class='ratings12'>
                                 <span class='fa fa-star-o'></span>
@@ -376,7 +358,7 @@
                                 <span class='fa fa-star-o'></span>
                             </div>
                             <input type='hidden' id='jogaHatHaOcena' name='jogaHatHaOcena'>
-                            <script type='text/javascript' src='js/ostavi_ocenu_yogaHatha.js'></script>
+                            <script> rateTraining(document.querySelector(".ratings12").children, document.querySelector("#jogaHatHaOcena"));</script>
                             <textarea placeholder="Leave a comment" value="comment" id="jogaHatHa"></textarea>
                             <button type="submit" class="c-btn" onclick="addComment('jogaHatHa',document.getElementById('jogaHatHa').value, document.querySelector('#jogaHatHaOcena').value)">Send</button>
                         </form>
@@ -481,33 +463,22 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="about-text text-left">
-                        <h5>USERNAME</h5>
-                        <p class="long-details">Comment body adfasdfasdgasdgasdgasdgasdgasdf
-                        </p>
+                        <p>USERNAME</p>
+                        <p class="long-details">Comment body adfasdfasdgasdgasdgasdgasdgasdf</p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="about-text text-left">
-                        <h5>USERNAME</h5>
-                        <p class="long-details">Comment body adfasdfasdgasdgasdgasdgasdgasdf
-                        </p>
+                        <p>USERNAME</p>
+                        <p class="long-details">Comment body adfasdfasdgasdgasdgasdgasdgasdf</p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="about-text text-left">
-                        <h5>USERNAME</h5>
-                        <p class="long-details">Comment body adfasdfasdgasdgasdgasdgasdgasdf
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="contact-form">
+                    <div class="contact-form" style='padding-bottom:20px;'>
                         <form action="">
                             <h4>COMMENT</h4>
                             <div class='ratings13'>
@@ -518,7 +489,7 @@
                                 <span class='fa fa-star-o'></span>
                             </div>
                             <input type='hidden' id='vinyasaYogaOcena' name='vinyasaYogaOcena'>
-                            <script type='text/javascript' src='js/ostavi_ocenu_yogaVinyasa.js'></script>
+                            <script> rateTraining(document.querySelector(".ratings13").children, document.querySelector("#vinyasaYogaOcena"));</script>
                             <textarea placeholder="Leave a comment" value="comment" id="jogaVinyasa"></textarea>
                             <button type="submit" class="c-btn" onclick="addComment('jogaVinyasa',document.getElementById('vinyasaYogaOcena').value, document.querySelector('#vinyasaYogaOcena').value)">Send</button>
                         </form>
