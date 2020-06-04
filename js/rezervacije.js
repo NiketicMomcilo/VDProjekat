@@ -626,7 +626,7 @@ function shuffle(array) {
   function addComment(arg, str, ocena){
       //console.log(arg);
       //console.log(str);
-    commentsMap.get(arg).push([str,ocena,localStorage.getItem("username")]);
+    commentsMap.get(arg).push([str,ocena,localStorage.getItem("username"), false]);
     console.log(commentsMap.get(arg));
   }
 
