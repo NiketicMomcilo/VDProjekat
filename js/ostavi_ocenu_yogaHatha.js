@@ -15,7 +15,7 @@ for(let i=0;i<stars12.length;i++){
     });
     stars12[i].addEventListener("click",function(){
         index12=i;
-        cistoca.value = index12 + 1;
+        ocenaHatha.value = index12 + 1;
     });
     stars12[i].addEventListener("mouseout",function(){
         for(let j=0;j<stars12.length;j++){
