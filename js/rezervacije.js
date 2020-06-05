@@ -59,7 +59,7 @@ var termin2 = {
     vrsta: "Classic",
     nivo: "lvl 1", 
     max: 10,
-    current: 7,
+    current: 10,
     startTime: 12,
     startAndFinishTime: "12:00 - 13:00",
     duration: 1,
@@ -116,7 +116,7 @@ var termin7 = {
     vrsta: "Iyengar",
     nivo: "lvl 2", 
     max: 10,
-    current: 3,
+    current: 10,
     startTime: 10,
     startAndFinishTime: "10:00 - 11:00",
     duration: 1,
@@ -183,7 +183,7 @@ var termin13 = {
     vrsta: "Reformer",
     nivo: "lvl 2", 
     max: 10,
-    current: 6,
+    current: 10,
     startTime: 10,
     startAndFinishTime: "10:00 - 11:00",
     duration: 1,
@@ -238,7 +238,7 @@ var termin18 = {
     vrsta: "GluteCore",
     nivo: "lvl 4", 
     max: 10,
-    current: 7,
+    current: 10,
     startTime: 19,
     startAndFinishTime: "19:00 - 20:00",
     duration: 1,
@@ -294,7 +294,7 @@ var termin23 = {
     vrsta: "Running",
     nivo: "lvl 5", 
     max: 10,
-    current: 2,
+    current: 10,
     startTime: 16,
     startAndFinishTime: "16:00 - 17:00",
     duration: 1,
@@ -361,7 +361,7 @@ var termin29 = {
     vrsta: "Stoti",
     nivo: "lvl 2", 
     max: 10,
-    current: 3,
+    current: 10,
     startTime: 14,
     startAndFinishTime: "14:00 - 15:00",
     duration: 1,
@@ -429,7 +429,7 @@ var termin35 = {
     vrsta: "Hat-ha",
     nivo: "lvl 1", 
     max: 10,
-    current: 4,
+    current: 10,
     startTime: 13,
     startAndFinishTime: "13:00 - 14:00",
     duration: 1,
@@ -451,7 +451,7 @@ var termin37 = {
     vrsta: "Cycling",
     nivo: "lvl 5", 
     max: 10,
-    current: 3,
+    current: 10,
     startTime: 18,
     startAndFinishTime: "18:00 - 19:00",
     duration: 1,
@@ -473,7 +473,7 @@ var termin39 = {
     vrsta: "Crossfit",
     nivo: "lvl 5", 
     max: 10,
-    current: 8,
+    current: 10,
     startTime: 20,
     startAndFinishTime: "20:00 - 21:00",
     duration: 1,
@@ -518,7 +518,7 @@ var termin43 = {
     vrsta: "Cycling",
     nivo: "lvl 5", 
     max: 10,
-    current: 8,
+    current: 10,
     startTime: 20,
     startAndFinishTime: "20:00 - 21:00",
     duration: 1,
@@ -561,6 +561,10 @@ function insertClasses(){
         let a = document.querySelector(id).children;
         a[0].innerHTML = termini[index].naziv;
         a[1].innerHTML = termini[index].vrsta;
+        if(termini[index].max>termini[index].current){
+            a[2].classList.remove('hide');
+            a[2].classList.add('show');
+        }
     }
     localStorage.setItem("username", "Coa");
     for (let index = 0; index < termini.length; index++) {
@@ -673,7 +677,6 @@ function showInitialCommentsJoga(){
     clon.children[0].children[0].children[0].children[1].innerHTML = commentsMap.get('jogaVinyasa')[0][0]; 
     commentsMap.get('jogaVinyasa')[0][3] = true;
     document.getElementById('CommentSectionjogaVinyasa').appendChild(clon);
-
 }
 
 //onload za cardio
@@ -706,7 +709,6 @@ function showInitialCommentsCardio(){
     clon.children[0].children[0].children[0].children[1].innerHTML = commentsMap.get('cardioRunning')[0][0]; 
     commentsMap.get('cardioRunning')[0][3] = true;
     document.getElementById('CommentSectioncardioRunning').appendChild(clon);
-
 }
 
 //onload za core
@@ -808,3 +810,54 @@ function getLvl(id){
         
     }
 }
+
+
+function nutritionAppointment(imeVal,emailVal,telefonVal,datumVal,opisVal){
+    var nutritionObj = {
+        ime: imeVal,
+        email: emailVal,
+        phone: telefonVal, 
+        datum: datumVal,
+        opis: opisVal,
+    };
+
+    var doc = new jsPDF();
+    doc.setFont('courier');
+    doc.setFontType('bold');
+    doc.text(20,20,"THANK YOU FOR MAKING AN APPOINTMENT!")
+
+    doc.setFontType('normal');
+    doc.text(20,30,"Appointment information:");
+    doc.text(20,40,"Name: " + imeVal);
+    doc.text(20,50,"Email: " + emailVal);
+    doc.text(20,60,"Phone: " + telefonVal);
+    doc.text(20,70,"Date: " + datumVal);
+    doc.text(20,80,"Your question: " + opisVal); 
+
+    doc.save('nutrition_appointment.pdf');
+    console.log(nutritionObj);
+  }
+
+  function reserveMassage(imeVal,emailVal,telefonVal,datumVal,opisVal){
+    var massageObj = {
+        ime: imeVal,
+        email: emailVal,
+        phone: telefonVal, 
+        datum: datumVal,
+        opis: opisVal,
+    };
+
+    var doc = new jsPDF();
+    doc.setFont('courier');
+    doc.setFontType('bold');
+    doc.text(20,20,"THANK YOU FOR MAKING AN APPOINTMENT!")
+
+    doc.setFontType('normal');
+    doc.text(20,30,"Appointment information:");
+    doc.text(20,40,"Name: " + imeVal);
+    doc.text(20,50,"Email: " + emailVal);
+    doc.text(20,60,"Phone: " + telefonVal);
+    doc.text(20,70,"Date: " + datumVal);
+    doc.text(20,80,"Your question: " + opisVal); 
+    doc.save('massage_confirm.pdf');
+  }
