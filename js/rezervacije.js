@@ -1,3 +1,4 @@
+
 var termini;
 
 var commentsMap = new Map();
@@ -536,24 +537,24 @@ var termin44 = {
     subs:  ["Nidza", "Vuk", "Tijana"]
     };  
 var termini= [termin1, termin2, termin3, termin4, termin5,
-              termin7, termin8, termin9, termin11, termin12,
-              termin13, termin14, termin15,termin16,termin17,termin18,termin20,
-              termin21, termin21, termin21, termin24, termin25, termin26,
-              termin27, termin28, termin29, termin30, termin31, 
-              termin33, termin34, termin35,termin36,termin37,termin38,termin39,termin40,
-              termin41,termin42,termin43,termin44
+            termin7, termin8, termin9, termin11, termin12,
+            termin13, termin14, termin15,termin16,termin17,termin18,termin20,
+            termin21, termin21, termin21, termin24, termin25, termin26,
+            termin27, termin28, termin29, termin30, termin31, 
+            termin33, termin34, termin35,termin36,termin37,termin38,termin39,termin40,
+            termin41,termin42,termin43,termin44
             ];
 var terminiIndexi = [
-                     1, 21, 61, 91, 101, 
-                     2, 12, 72, 102, 112,
-                     3, 23, 33, 53, 83, 93, 113,
-                     4, 24, 64, 94, 104, 114,
-                     5, 15, 75, 95, 105,
-                     6, 26, 36, 56, 86, 96, 106, 116,
-                     87, 97,107,117
+                    1, 21, 61, 91, 101, 
+                    2, 12, 72, 102, 112,
+                    3, 23, 33, 53, 83, 93, 113,
+                    4, 24, 64, 94, 104, 114,
+                    5, 15, 75, 95, 105,
+                    6, 26, 36, 56, 86, 96, 106, 116,
+                    87, 97,107,117
                     ];
 
-    //poziva se na onload index body
+//poziva se na onload index body
 function insertClasses(){
     //upisuje sve termine u raspored
     for (let index = 0; index < terminiIndexi.length; index++) {
@@ -566,12 +567,28 @@ function insertClasses(){
             a[2].classList.add('show');
         }
     }
-    var dictstring = JSON.stringify(termin1);
-    var fs = require('fs');
-    fs.writeFile("thing.json", dictstring, function(err, result) {
-        if(err) console.log('error', err);
-    });
+    
     localStorage.setItem("username", "Coa");
+    
+    if(JSON.parse(localStorage.getItem("termini")) == null){
+        localStorage.setItem("termini", JSON.stringify(termini));
+    }
+    else{
+        termini = Array.from(JSON.parse(localStorage.getItem("termini")));
+    }
+
+
+    if(JSON.parse(localStorage.getItem("commentsMap")) == null){
+        localStorage.setItem("commentsMap", JSON.stringify(Array.from(commentsMap.entries())));
+    }
+    else{
+        commentsMap = new Map(JSON.parse(localStorage.getItem("commentsMap")));
+
+    }
+    //console.log(termini);
+    //console.log(commentsMap);
+    
+
     for (let index = 0; index < termini.length; index++) {
        // console.log(termini[index].subs.length ==  termini[index].current);
     }
@@ -579,10 +596,14 @@ function insertClasses(){
 }
 
 function makeReservation(param){
+    loadLocalStorage();
    //console.log(param.closest("td").id);
     let id = param.closest("td").id;
     let index = findIndex(id);
-    
+
+    console.log(termini[index]);
+    console.log(termini[index].current);
+    console.log(termini[index].max);
     
     if(termini[index].current == termini[index].max){
         window.alert("Zao nam je ovaj termin je popunjen.")
@@ -599,7 +620,7 @@ function makeReservation(param){
     termini[index].subs.push(localStorage.getItem("username"));
     window.alert("Dodati ste u ovaj termin.");
     //console.log(termini[index].subs);
-
+    saveLocalStorage();
 }
 function findIndex(id){
     for (let index = 0; index < terminiIndexi.length; index++) {
@@ -609,34 +630,17 @@ function findIndex(id){
     }
 }
 
-function shuffle(array) {
-    var currentIndex = array.length, temporaryValue, randomIndex;
-  
-    // While there remain elements to shuffle...
-    while (0 !== currentIndex) {
-  
-      // Pick a remaining element...
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex -= 1;
-  
-      // And swap it with the current element.
-      temporaryValue = array[currentIndex];
-      array[currentIndex] = array[randomIndex];
-      array[randomIndex] = temporaryValue;
-    }
-  
-    return array;
-  }
+
 //dodavanje komentara
 function addComment(arg, str, ocena){
-    //console.log(arg);
-    //console.log(str);
-commentsMap.get(arg).push([str,ocena,localStorage.getItem("username"), false]);
-//console.log(commentsMap.get(arg));
+    loadLocalStorage();
+    commentsMap.get(arg).push([str,ocena,localStorage.getItem("username"), false]);
+    saveLocalStorage();
 }
 //prikazivanje ostalih komentara
 function showContent(id, trening) {
-    for (let i = 0; i < commentsMap.get(trening).length ;i++) {
+    loadLocalStorage();
+    for (let i = 1; i < commentsMap.get(trening).length ;i++) {
         if(commentsMap.get(trening)[i][3] == false){
             var temp = document.getElementsByTagName("template")[0];
             var clon = temp.content.cloneNode(true);
@@ -647,14 +651,16 @@ function showContent(id, trening) {
             document.getElementById(id).appendChild(clon);
         }
     }
+    saveLocalStorage();
 }
 //onload za jogu
 function showInitialCommentsJoga(){
-    for (var m in commentsMap){
-        for (var i=0 ; i<commentsMap[m].length; i++){
-            commentsMap[m][i][3] = false;
-        }
-    } 
+    loadLocalStorage();
+
+    for (let i = 0; i < commentsMap.get('jogaIyengar').length; i++) {
+        commentsMap.get('jogaIyengar')[i][3] = false;     
+    }
+
     //stavi prvi komentar za iyengarJoga
     var temp = document.getElementsByTagName("template")[0];
     var clon = temp.content.cloneNode(true);
@@ -663,6 +669,9 @@ function showInitialCommentsJoga(){
     commentsMap.get('jogaIyengar')[0][3] = true;
     document.getElementById('CommentSectionjogaIyengar').appendChild(clon);
 
+    for (let i = 0; i < commentsMap.get('jogaHatHa').length; i++) {
+        commentsMap.get('jogaHatHa')[i][3] = false;     
+    }
     //stavi prvi komentar za jogaHatHa
     var temp = document.getElementsByTagName("template")[0];
     var clon = temp.content.cloneNode(true);
@@ -671,6 +680,9 @@ function showInitialCommentsJoga(){
     commentsMap.get('jogaHatHa')[0][3] = true;
     document.getElementById('CommentSectionjogaHatHa').appendChild(clon);
 
+    for (let i = 0; i < commentsMap.get('jogaVinyasa').length; i++) {
+        commentsMap.get('jogaVinyasa')[i][3] = false;     
+    }
     //stavi prvi komentar za jogaVinyasa
     var temp = document.getElementsByTagName("template")[0];
     var clon = temp.content.cloneNode(true);
@@ -678,16 +690,19 @@ function showInitialCommentsJoga(){
     clon.children[0].children[0].children[0].children[1].innerHTML = commentsMap.get('jogaVinyasa')[0][0]; 
     commentsMap.get('jogaVinyasa')[0][3] = true;
     document.getElementById('CommentSectionjogaVinyasa').appendChild(clon);
+    saveLocalStorage();
 }
 
 //onload za cardio
 function showInitialCommentsCardio(){
-    for (var m in commentsMap){
-        for (var i=0 ; i<commentsMap[m].length; i++){
-            commentsMap[m][i][3] = false;
-        }
-    } 
-    //stavi prvi komentar za iyengarJoga
+    loadLocalStorage();
+
+
+    //stavi prvi komentar za cardioRowing
+    for (let i = 0; i < commentsMap.get('cardioRowing').length; i++) {
+        commentsMap.get('cardioRowing')[i][3] = false;     
+    }
+
     var temp = document.getElementsByTagName("template")[0];
     var clon = temp.content.cloneNode(true);
     clon.children[0].children[0].children[0].children[0].innerHTML = commentsMap.get('cardioRowing')[0][2];
@@ -695,7 +710,11 @@ function showInitialCommentsCardio(){
     commentsMap.get('cardioRowing')[0][3] = true;
     document.getElementById('CommentSectioncardioRowing').appendChild(clon);
 
-    //stavi prvi komentar za jogaHatHa
+
+    //stavi prvi komentar za cardioCycling
+    for (let i = 0; i < commentsMap.get('cardioCycling').length; i++) {
+        commentsMap.get('cardioCycling')[i][3] = false;     
+    }
     var temp = document.getElementsByTagName("template")[0];
     var clon = temp.content.cloneNode(true);
     clon.children[0].children[0].children[0].children[0].innerHTML = commentsMap.get('cardioCycling')[0][2];
@@ -703,23 +722,27 @@ function showInitialCommentsCardio(){
     commentsMap.get('cardioCycling')[0][3] = true;
     document.getElementById('CommentSectioncardioCycling').appendChild(clon);
 
-    //stavi prvi komentar za jogaVinyasa
+    //stavi prvi komentar za cardioRunning
+    for (let i = 0; i < commentsMap.get('cardioRunning').length; i++) {
+        commentsMap.get('cardioRunning')[i][3] = false;     
+    }
     var temp = document.getElementsByTagName("template")[0];
     var clon = temp.content.cloneNode(true);
     clon.children[0].children[0].children[0].children[0].innerHTML = commentsMap.get('cardioRunning')[0][2];
     clon.children[0].children[0].children[0].children[1].innerHTML = commentsMap.get('cardioRunning')[0][0]; 
     commentsMap.get('cardioRunning')[0][3] = true;
     document.getElementById('CommentSectioncardioRunning').appendChild(clon);
+    saveLocalStorage();
 }
 
 //onload za core
 function showInitialCommentsCore(){
-    for (var m in commentsMap){
-        for (var i=0 ; i<commentsMap[m].length; i++){
-            commentsMap[m][i][3] = false;
-        }
-    } 
-    //stavi prvi komentar za iyengarJoga
+    loadLocalStorage();
+
+    //stavi prvi komentar za coreCrossfit
+    for (let i = 0; i < commentsMap.get('coreCrossfit').length; i++) {
+        commentsMap.get('coreCrossfit')[i][3] = false;     
+    }
     var temp = document.getElementsByTagName("template")[0];
     var clon = temp.content.cloneNode(true);
     clon.children[0].children[0].children[0].children[0].innerHTML = commentsMap.get('coreCrossfit')[0][2];
@@ -727,7 +750,10 @@ function showInitialCommentsCore(){
     commentsMap.get('coreCrossfit')[0][3] = true;
     document.getElementById('CommentSectioncoreCrossfit').appendChild(clon);
 
-    //stavi prvi komentar za jogaHatHa
+    //stavi prvi komentar za coreGluteCore
+    for (let i = 0; i < commentsMap.get('coreGluteCore').length; i++) {
+        commentsMap.get('coreGluteCore')[i][3] = false;     
+    }
     var temp = document.getElementsByTagName("template")[0];
     var clon = temp.content.cloneNode(true);
     clon.children[0].children[0].children[0].children[0].innerHTML = commentsMap.get('coreGluteCore')[0][2];
@@ -735,24 +761,26 @@ function showInitialCommentsCore(){
     commentsMap.get('coreGluteCore')[0][3] = true;
     document.getElementById('CommentSectioncoreGluteCore').appendChild(clon);
 
-    //stavi prvi komentar za jogaVinyasa
+    //stavi prvi komentar za coreBadAss
+    for (let i = 0; i < commentsMap.get('coreBadAss').length; i++) {
+        commentsMap.get('coreBadAss')[i][3] = false;     
+    }
     var temp = document.getElementsByTagName("template")[0];
     var clon = temp.content.cloneNode(true);
     clon.children[0].children[0].children[0].children[0].innerHTML = commentsMap.get('coreBadAss')[0][2];
     clon.children[0].children[0].children[0].children[1].innerHTML = commentsMap.get('coreBadAss')[0][0]; 
     commentsMap.get('coreBadAss')[0][3] = true;
     document.getElementById('CommentSectioncoreBadAss').appendChild(clon);
-
+    saveLocalStorage();
 }
 
 //onload za pilates
 function showInitialCommentsPilates(){
-    for (var m in commentsMap){
-        for (var i=0 ; i<commentsMap[m].length; i++){
-            commentsMap[m][i][3] = false;
-        }
-    } 
-    //stavi prvi komentar za iyengarJoga
+    loadLocalStorage();
+    //stavi prvi komentar za pilatesClassic
+    for (let i = 0; i < commentsMap.get('pilatesClassic').length; i++) {
+        commentsMap.get('pilatesClassic')[i][3] = false;     
+    }
     var temp = document.getElementsByTagName("template")[0];
     var clon = temp.content.cloneNode(true);
     clon.children[0].children[0].children[0].children[0].innerHTML = commentsMap.get('pilatesClassic')[0][2];
@@ -760,7 +788,10 @@ function showInitialCommentsPilates(){
     commentsMap.get('pilatesClassic')[0][3] = true;
     document.getElementById('CommentSectionpilatesClassic').appendChild(clon);
 
-    //stavi prvi komentar za jogaHatHa
+    //stavi prvi komentar za pilatesStott
+    for (let i = 0; i < commentsMap.get('pilatesStott').length; i++) {
+        commentsMap.get('pilatesStott')[i][3] = false;     
+    }
     var temp = document.getElementsByTagName("template")[0];
     var clon = temp.content.cloneNode(true);
     clon.children[0].children[0].children[0].children[0].innerHTML = commentsMap.get('pilatesStott')[0][2];
@@ -768,22 +799,27 @@ function showInitialCommentsPilates(){
     commentsMap.get('pilatesStott')[0][3] = true;
     document.getElementById('CommentSectionpilatesStott').appendChild(clon);
 
-    //stavi prvi komentar za jogaVinyasa
+    //stavi prvi komentar za pilatesReformer
+    for (let i = 0; i < commentsMap.get('pilatesReformer').length; i++) {
+        commentsMap.get('pilatesReformer')[i][3] = false;     
+    }
     var temp = document.getElementsByTagName("template")[0];
     var clon = temp.content.cloneNode(true);
     clon.children[0].children[0].children[0].children[0].innerHTML = commentsMap.get('pilatesReformer')[0][2];
     clon.children[0].children[0].children[0].children[1].innerHTML = commentsMap.get('pilatesReformer')[0][0]; 
     commentsMap.get('pilatesReformer')[0][3] = true;
     document.getElementById('CommentSectionpilatesReformer').appendChild(clon);
-
+    saveLocalStorage();
 }
 
 function calculateAvgRaiting(id){
+    loadLocalStorage();
     var ret = 0;
     for (let i = 0; i < commentsMap.get(id).length; i++) {
         ret+= commentsMap.get(id)[i][1];
     }
     return ret/commentsMap.get(id).length;
+    saveLocalStorage();
 }
 
 /*
@@ -804,11 +840,13 @@ Running
 */
 
 function getLvl(id){
+    loadLocalStorage();
     for (let i = 0; i < termini.length; i++) {
         if(termini[i].vrsta === id){
             return "" + termini[i].nivo;
         }
     }
+    saveLocalStorage();
 }
 
 
@@ -864,6 +902,7 @@ function nutritionAppointment(imeVal,emailVal,telefonVal,datumVal,opisVal){
   }
 
 function insertMyReservations(){
+    loadLocalStorage();
     //upisuje sve moje termine u raspored
     for (let index = 0; index < terminiIndexi.length; index++) {
         let id = "[id='"+"my_profile" + terminiIndexi[index] + "']";
@@ -884,9 +923,10 @@ function insertMyReservations(){
             a[2].classList.add('show');
         }
     }
+    saveLocalStorage();
 }
 function quitReservation(id){
-   
+    loadLocalStorage();
     let td = id.closest("td").id;
     let index = "[id='"+ td + "']";
     let a = document.querySelector(index).children;
@@ -902,5 +942,14 @@ function quitReservation(id){
     termini[param].subs.splice(temp, 1);
     window.alert("izbaceni ste iz termina");
     //console.log(termini[param].subs);
+    saveLocalStorage();
+}
+function loadLocalStorage(){
+    termini = Array.from(JSON.parse(localStorage.getItem("termini")));
+    commentsMap = new Map(JSON.parse(localStorage.getItem("commentsMap")));
+}
+function saveLocalStorage(){
+    localStorage.setItem("termini", JSON.stringify(termini));
+    localStorage.setItem("commentsMap", JSON.stringify(Array.from(commentsMap.entries())));
 
 }
