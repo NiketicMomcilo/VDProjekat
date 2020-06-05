@@ -123,7 +123,7 @@ var termin7 = {
     subs: [""]
     };
 var termin8 = {
-    naziv: "Yoga",
+    naziv: "Pilates",
     vrsta: "Reformer",
     nivo: "lvl 2", 
     max: 10,
@@ -800,14 +800,13 @@ Stoti
 Vinyasa
 BadAss
 Running
-
 */
+
 function getLvl(id){
     for (let i = 0; i < termini.length; i++) {
-        if(termini[i].naziv == id){
-            return termini[i].nivo;
+        if(termini[i].vrsta === id){
+            return "" + termini[i].nivo;
         }
-        
     }
 }
 
@@ -833,9 +832,10 @@ function nutritionAppointment(imeVal,emailVal,telefonVal,datumVal,opisVal){
     doc.text(20,60,"Phone: " + telefonVal);
     doc.text(20,70,"Date: " + datumVal);
     doc.text(20,80,"Your question: " + opisVal); 
+    
 
-    doc.save('nutrition_appointment.pdf');
-    console.log(nutritionObj);
+   doc.save('appointment_info.pdf');
+    
   }
 
   function reserveMassage(imeVal,emailVal,telefonVal,datumVal,opisVal){

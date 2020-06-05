@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 
+    <script src="js/rezervacije.js"></script>
+
 </head>
 <body>
    <!-- Page Preloder -->
@@ -81,7 +83,7 @@
         </div>
     </section>
     <!-- Breadcrumb End -->
-    
+
     <!-- Classes Section Begin -->
     <section class="classes-section">
         <div class="container">
@@ -132,6 +134,184 @@
         </div>
     </section>
     <!-- Classes Section End -->
+
+    <!-- Filter Section Begin -->
+    <section class="gallery-section spad">
+        <div class="container">
+            <div class="about-text text-left">
+                <h2>FILTERS </h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="gallery-controls text-left">
+                        <ul>
+                            <li class="active" data-filter="*">All Programs</li>
+                            <li data-filter=".yoga">Yoga</li>
+                            <li data-filter=".pilates">Pilates</li>
+                            <li data-filter=".cardio">Cardio</li>
+                            <li data-filter=".core">Core</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="gallery-controls text-right">
+                        <ul>
+                            <li data-sort="difficulty:desc">Difficulty</li>
+                            <li data-sort="name:asc">Name</li>
+                            <li data-sort="duration:desc">Duration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row gallery-filter">
+                <div class="col-lg-4 col-sm-6 mix cardio" data-duration="30" data-name="4" data-difficulty="4">
+                    <div class="gallery-item">
+                        <img src="img/programs/workouts/cardio/cycling-1.jpg" alt="">
+                        <div class="gi-hover-warp">
+                            <div class="gi-hover">
+                                <a href="img/programs/workouts/cardio/cycling-1.jpg" class="image-popup"><i class="fa fa-search-plus"></i></a>
+                                <a href="cardio.html"><i class="fa fa-chain"></i></a>
+                                <h6>Cycling<span>Difficulty: 4</span><span>Duration: 30 min</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mix cardio" data-duration="45" data-name="7" data-difficulty="5">
+                    <div class="gallery-item">
+                        <img src="img/programs/workouts/cardio/rowing-3.jpg" alt="">
+                        <div class="gi-hover-warp">
+                            <div class="gi-hover">
+                                <a href="img/programs/workouts/cardio/rowing-2.jpg" class="image-popup"><i class="fa fa-search-plus"></i></a>
+                                <a href="cardio.html"><i class="fa fa-chain"></i></a>
+                                <h6>Rowing <span>Difficulty: 5</span><span>Duration: 45 min</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mix cardio" data-duration="60" data-name="8" data-difficulty="4"> 
+                    <div class="gallery-item">
+                        <img src="img/programs/workouts/cardio/running-1.jpg" alt="">
+                        <div class="gi-hover-warp">
+                            <div class="gi-hover">
+                                <a href="img/programs/workouts/cardio/running-1.jpg" class="image-popup"><i class="fa fa-search-plus"></i></a>
+                                <a href="cardio.html"><i class="fa fa-chain"></i></a>
+                                <h6>Running<span>Difficulty: 4</span><span>Duration: 60 min</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mix core" data-duration="60" data-difficulty="5" data-name="3">
+                    <div class="gallery-item">
+                        <img src="img/programs/workouts/core/crossfit-1.jpg" alt="">
+                        <div class="gi-hover-warp">
+                            <div class="gi-hover">
+                                <a href="img/programs/workouts/core/crossfit-1.jpg" class="image-popup"><i class="fa fa-search-plus"></i></a>
+                                <a href="core.html"><i class="fa fa-chain"></i></a>
+                                <h6>Crossfit <span>Difficulty: 5</span><span>Duration: 60min</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mix core" data-duration="60" data-difficulty="4" data-name="1">
+                    <div class="gallery-item"> 
+                        <img src="img/programs/workouts/core/badass-1.jpg" alt="">
+                        <div class="gi-hover-warp">
+                            <div class="gi-hover">
+                                <a href="img/programs/workouts/core/badass-1.jpg" class="image-popup"><i class="fa fa-search-plus"></i></a>
+                                <a href="core.html"><i class="fa fa-chain"></i></a>
+                                <h6>BadAss<span>Difficulty: 4</span><span>Duration: 60min</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mix core" data-duration="60" data-difficulty="4" data-name="5">
+                    <div class="gallery-item">
+                        <img src="img/programs/workouts/core/glutecore-1.jpg" alt="">
+                        <div class="gi-hover-warp">
+                            <div class="gi-hover">
+                                <a href="img/programs/workouts/core/glutecore-1.jpg" class="image-popup"><i class="fa fa-search-plus"></i></a>
+                                <a href="core.html"><i class="fa fa-chain"></i></a>
+                                <h6>Glute&Core <span>Difficulty: 4</span><span>Duration: 60min</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mix pilates" data-duration="50" data-difficulty="1" data-name="2">
+                    <div class="gallery-item">
+                        <img src="img/programs/workouts/pilates/classical-1.jpg" alt="">
+                        <div class="gi-hover-warp">
+                            <div class="gi-hover">
+                                <a href="img/programs/workouts/pilates/classical-1.jpg" class="image-popup"><i class="fa fa-search-plus"></i></a>
+                                <a href="pilates.html"><i class="fa fa-chain"></i></a>
+                                <h6>Classical Pilates <span>Difficulty: 1</span><span>Duration: 50 min</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mix pilates" data-duration="60" data-difficulty="2" data-name="9">
+                    <div class="gallery-item">
+                        <img src="img/programs/workouts/pilates/stott-1.jpg" alt="">
+                        <div class="gi-hover-warp">
+                            <div class="gi-hover">
+                                <a href="img/programs/workouts/pilates/stott-1.jpg" class="image-popup"><i class="fa fa-search-plus"></i></a>
+                                <a href="pilates.html"><i class="fa fa-chain"></i></a>
+                                <h6>Stott Pilates <span>Difficulty: 2</span><span>Duration: 60 min</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mix pilates" data-duration="55" data-difficulty="2" data-name="6">
+                    <div class="gallery-item">
+                        <img src="img/programs/workouts/pilates/reformer-1.jpg" alt="">
+                        <div class="gi-hover-warp">
+                            <div class="gi-hover">
+                                <a href="img/programs/workouts/pilates/reformer-1.jpg" class="image-popup"><i class="fa fa-search-plus"></i></a>
+                                <a href="pilates.html"><i class="fa fa-chain"></i></a>
+                                <h6>Reformer Pilates <span>Difficulty: 2 </span><span>Duration: 55 min</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mix yoga" data-duration="60" data-difficulty="1" data-name="10">
+                    <div class="gallery-item">
+                        <img src="img/programs/workouts/yoga/hatha-1.jpg" alt="">
+                        <div class="gi-hover-warp">
+                            <div class="gi-hover">
+                                <a href="img/programs/workouts/yoga/hatha-1.jpg" class="image-popup"><i class="fa fa-search-plus"></i></a>
+                                <a href="yoga.html"><i class="fa fa-chain"></i></a>
+                                <h6>Yoga Hatha<span>Difficulty: 1</span><span>Duration: 60min</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mix yoga" data-duration="50" data-difficulty="2" data-name="11">
+                    <div class="gallery-item">
+                        <img src="img/programs/workouts/yoga/iyengar-1.jpg" alt="">
+                        <div class="gi-hover-warp">
+                            <div class="gi-hover">
+                                <a href="img/programs/workouts/yoga/iyengar-1.jpg" class="image-popup"><i class="fa fa-search-plus"></i></a>
+                                <a href="yoga.html"><i class="fa fa-chain"></i></a>
+                                <h6>Yoga Iyengar <span>Difficulty: 2</span><span>Duration: 50min</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mix yoga" data-duration="55" data-difficulty="2" data-name="12">
+                    <div class="gallery-item">
+                        <img src="img/programs/workouts/yoga/vinyasa-1.jpg" alt="">
+                        <div class="gi-hover-warp">
+                            <div class="gi-hover">
+                                <a href="img/programs/workouts/yoga/vinyasa-1.jpg" class="image-popup"><i class="fa fa-search-plus"></i></a>
+                                <a href="yoga.html"><i class="fa fa-chain"></i></a>
+                                <h6>Yoga Vinyasa <span>Difficulty: 2</span><span>Duration: 55min</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Filter Section End -->
 
     <!-- Footer Section Begin -->
     <footer class="footer-section">
@@ -215,5 +395,6 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/main.js"></script>
+    
 </body>
 </html>
