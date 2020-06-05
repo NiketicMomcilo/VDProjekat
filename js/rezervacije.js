@@ -606,19 +606,19 @@ function makeReservation(param){
     console.log(termini[index].max);
     
     if(termini[index].current == termini[index].max){
-        window.alert("Zao nam je ovaj termin je popunjen.")
+        Swal.fire("Zao nam je ovaj termin je popunjen.")
         return;
     }
 
     for (let i = 0; i < termini[index].subs.length; i++) {
         if(termini[index].subs[i] == localStorage.getItem("username")){
-            window.alert("Vec ste se prijavili za ovaj termin.");
+            Swal.fire("Vec ste se prijavili za ovaj termin.");
             return;
         }
     }
     termini[index].current++;
     termini[index].subs.push(localStorage.getItem("username"));
-    window.alert("Dodati ste u ovaj termin.");
+    Swal.fire("Dodati ste u ovaj termin.");
     //console.log(termini[index].subs);
     saveLocalStorage();
 }
@@ -940,7 +940,7 @@ function quitReservation(id){
     termini[param].current--;
     let temp = termini[param].subs.indexOf(localStorage.getItem("username"));
     termini[param].subs.splice(temp, 1);
-    window.alert("izbaceni ste iz termina");
+    Swal.fire('Izbaceni ste iz ovog termina.')
     //console.log(termini[param].subs);
     saveLocalStorage();
 }
