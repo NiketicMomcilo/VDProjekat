@@ -817,9 +817,11 @@ function calculateAvgRaiting(id){
     var ret = 0;
     for (let i = 0; i < commentsMap.get(id).length; i++) {
         ret+= commentsMap.get(id)[i][1];
+        console.log(ret);
     }
-    return ret/commentsMap.get(id).length;
     saveLocalStorage();
+    return ret/commentsMap.get(id).length;
+    
 }
 
 /*
@@ -922,6 +924,10 @@ function insertMyReservations(){
             a[2].classList.remove('hide');
             a[2].classList.add('show');
         }
+        else{
+            a[0].style.visibility="hidden";
+            a[1].style.visibility="hidden";
+        }
     }
     saveLocalStorage();
 }
@@ -932,6 +938,8 @@ function quitReservation(id){
     let a = document.querySelector(index).children;
     //console.log(a);
     //a[2].remove();
+    a[0].style.visibility="hidden";
+    a[1].style.visibility="hidden";
     a[2].style.visibility="hidden";
 
     var r = /\d+/;
