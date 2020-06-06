@@ -53,7 +53,8 @@ var termin1 = {
     startTime: 10,
     startAndFinishTime: "10:00 - 11:00",
     duration: 1,
-    subs: ["Veske", "Moma", "Marija", "Adrijan"]
+    subs: ["Veske", "Moma", "Marija", "Adrijan"],
+    last: ["Veske", "Moma", "Marija", "Adrijan"]
     };
 var termin2 = {
     naziv: "Pilates",
@@ -64,7 +65,8 @@ var termin2 = {
     startTime: 12,
     startAndFinishTime: "12:00 - 13:00",
     duration: 1,
-    subs: ["Mina", "Drazen", "Veske", "Tijana", "Moma", "Marija", "Nidza", "Jelica", "Dule", "Adrijan"]
+    subs: ["Mina", "Drazen", "Veske", "Tijana", "Moma", "Marija", "Nidza", "Jelica", "Dule", "Adrijan"],
+    last: ["Mina", "Drazen", "Veske", "Tijana", "Moma", "Marija", "Nidza", "Jelica", "Dule", "Adrijan"]
     };
 var termin3 = {
     naziv: "Cardio",
@@ -75,7 +77,8 @@ var termin3 = {
     startTime: 16,
     startAndFinishTime: "16:00 - 17:00",
     duration: 1,
-    subs: ["Dule", "Adrijan", "Drazen", "Vuk", "Tijana", "Moma", "Jelica", "Coa", "Nidza"]
+    subs: ["Dule", "Adrijan", "Drazen", "Vuk", "Tijana", "Moma", "Jelica", "Coa", "Nidza"],
+    last: ["Dule", "Adrijan", "Drazen", "Vuk", "Tijana", "Moma", "Jelica", "Coa", "Nidza"]
     };
 var termin4 = {
     naziv: "Core",
@@ -86,7 +89,9 @@ var termin4 = {
     startTime: 17,
     startAndFinishTime: "18:00 - 19:00",
     duration: 1,
-    subs: ["Nidza", "Vuk", "Tijana"]
+    subs: ["Nidza", "Vuk", "Tijana"],
+    last: ["Nidza", "Vuk", "Tijana"]
+
     };
 var termin5 = {
     naziv: "Core",
@@ -97,7 +102,8 @@ var termin5 = {
     startTime: 19,
     startAndFinishTime: "20:00 - 21:00",
     duration: 1,
-    subs: ["Coa", "Tijana", "Vuk", "Mina", "Dule", "Moma", "Adrijan", "Jelica", "Veske", "Nidza"]
+    subs: ["Coa", "Tijana", "Vuk", "Mina", "Dule", "Moma", "Adrijan", "Jelica", "Veske", "Nidza"],
+    last: ["Coa", "Tijana", "Vuk", "Mina", "Dule", "Moma", "Adrijan", "Jelica", "Veske", "Nidza"]
     };
 var termin6 = {
     naziv: "Cardio",
@@ -108,7 +114,9 @@ var termin6 = {
     startTime: 21,
     startAndFinishTime: "21:00 - 22:00",
     duration: 1,
-    subs: ["Vuk", "Marija", "Mina"]
+    subs: ["Vuk", "Marija", "Mina"],
+    last: ["Vuk", "Marija", "Mina"]
+
     };
 
     ///////UTORAK
@@ -121,7 +129,8 @@ var termin7 = {
     startTime: 10,
     startAndFinishTime: "10:00 - 11:00",
     duration: 1,
-    subs: ["Marija", "Veske", "Vuk"]
+    subs: ["Marija", "Veske", "Vuk"],
+    last: ["Marija", "Veske", "Vuk"]
     };
 var termin8 = {
     naziv: "Pilates",
@@ -132,7 +141,8 @@ var termin8 = {
     startTime: 11,
     startAndFinishTime: "11:00 - 12:00",
     duration: 1,
-    subs: ["Coa", "Moma", "Nidza"]
+    subs: ["Coa", "Moma", "Nidza"],
+    last: ["Coa", "Moma", "Nidza"]
     };
 var termin9 = {
     naziv: "Pilates",
@@ -143,7 +153,8 @@ var termin9 = {
     startTime: 14,
     startAndFinishTime: "14:00 - 15:00",
     duration: 1,
-    subs: ["Marija", "Vuk", "Nidza"]
+    subs: ["Marija", "Vuk", "Nidza"],
+    last: ["Marija", "Vuk", "Nidza"]
     };
 var termin10 = {
     naziv: "Core",
@@ -154,7 +165,8 @@ var termin10 = {
     startTime: 17,
     startAndFinishTime: "18:00 - 19:00",
     duration: 1,
-    subs: ["Dule", "Drazen", "Coa", "Jelica", "Veske", "Vuk", "Tijana", "Nidza", "Mina"]
+    subs: ["Dule", "Drazen", "Coa", "Jelica", "Veske", "Vuk", "Tijana", "Nidza", "Mina"],
+    last: ["Dule", "Drazen", "Coa", "Jelica", "Veske", "Vuk", "Tijana", "Nidza", "Mina"]
     };
 var termin11 = {
     naziv: "Core",
@@ -165,7 +177,8 @@ var termin11 = {
     startTime: 19,
     startAndFinishTime: "20:00 - 21:00",
     duration: 1,
-    subs: ["Tijana", "Coa", "Marija"]
+    subs: ["Tijana", "Coa", "Marija"],
+    last: ["Tijana", "Coa", "Marija"]
     };
 var termin12 = {
     naziv: "Cardio",
@@ -176,7 +189,8 @@ var termin12 = {
     startTime: 21,
     startAndFinishTime: "21:00 - 22:00",
     duration: 1,
-    subs: ["Adrijan", "Vuk", "Jelica"]
+    subs: ["Adrijan", "Vuk", "Jelica"],
+    last: ["Adrijan", "Vuk", "Jelica"]
     };
 /////SREDA///////
 var termin13 = {
@@ -188,7 +202,8 @@ var termin13 = {
     startTime: 10,
     startAndFinishTime: "10:00 - 11:00",
     duration: 1,
-    subs: ["Veske", "Dule", "Marija", "Nidza", "Vuk", "Jelica", "Drazen", "Adrijan", "Coa", "Tijana"]
+    subs: ["Veske", "Dule", "Marija", "Nidza", "Vuk", "Jelica", "Drazen", "Adrijan", "Coa", "Tijana"],
+    last: ["Veske", "Dule", "Marija", "Nidza", "Vuk", "Jelica", "Drazen", "Adrijan", "Coa", "Tijana"]
     };
 var termin14 = {
     naziv: "Yoga",
@@ -199,7 +214,8 @@ var termin14 = {
     startTime: 12,
     startAndFinishTime: "12:00 - 13:00",
     duration: 1,
-    subs: ["Adrijan", "Coa", "Tijana"]
+    subs: ["Adrijan", "Coa", "Tijana"],
+    last: ["Adrijan", "Coa", "Tijana"]
     };
 var termin15 = {
     naziv: "Yoga",
@@ -210,7 +226,8 @@ var termin15 = {
     startTime: 13,
     startAndFinishTime: "13:00 - 14:00",
     duration: 1,
-    subs: ["Drazen", "Veske", "Dule", "Mina"]
+    subs: ["Drazen", "Veske", "Dule", "Mina"],
+    last: ["Drazen", "Veske", "Dule", "Mina"]
     };
 var termin16 = {
     naziv: "Pilates",
@@ -221,7 +238,8 @@ var termin16 = {
     startTime: 15,
     startAndFinishTime: "15:00 - 16:00",
     duration: 1,
-    subs: ["Coa", "Jelica", "Vuk", "Dule", "Veske", "Moma"]
+    subs: ["Coa", "Jelica", "Vuk", "Dule", "Veske", "Moma"],
+    last: ["Coa", "Jelica", "Vuk", "Dule", "Veske", "Moma"]
     };
 var termin17 = {
     naziv: "Cardio",
@@ -232,7 +250,8 @@ var termin17 = {
     startTime: 18,
     startAndFinishTime: "18:00 - 19:00",
     duration: 1,
-    subs: ["Nidza", "Drazen", "Dule"]
+    subs: ["Nidza", "Drazen", "Dule"],
+    last: ["Nidza", "Drazen", "Dule"]
     };
 var termin18 = {
     naziv: "Core",
@@ -243,7 +262,8 @@ var termin18 = {
     startTime: 19,
     startAndFinishTime: "19:00 - 20:00",
     duration: 1,
-    subs: ["Vuk", "Veske", "Coa", "Marija", "Dule", "Jelica", "Tijana", "Adrijan", "Mina", "Nidza"]
+    subs: ["Vuk", "Veske", "Coa", "Marija", "Dule", "Jelica", "Tijana", "Adrijan", "Mina", "Nidza"],
+    last: ["Vuk", "Veske", "Coa", "Marija", "Dule", "Jelica", "Tijana", "Adrijan", "Mina", "Nidza"]
     };
 var termin19 = {
     naziv: "Core",
@@ -254,7 +274,8 @@ var termin19 = {
     startTime: 20,
     startAndFinishTime: "20:00 - 21:00",
     duration: 1,
-    subs: ["Marija", "Veske", "Nidza", "Mina", "Jelica", "Moma", "Drazen",  "Tijana"]
+    subs: ["Marija", "Veske", "Nidza", "Mina", "Jelica", "Moma", "Drazen",  "Tijana"],
+    last: ["Marija", "Veske", "Nidza", "Mina", "Jelica", "Moma", "Drazen",  "Tijana"]
     };
 var termin20 = {
     naziv: "Cardio",
@@ -265,7 +286,8 @@ var termin20 = {
     startTime: 21,
     startAndFinishTime: "21:00 - 22:00",
     duration: 1,
-    subs: ["Tijana", "Vuk", "Dule"]
+    subs: ["Tijana", "Vuk", "Dule"],
+    last: ["Tijana", "Vuk", "Dule"]
     };  
     /////CETVRTAK/////      
 var termin21 = {
@@ -277,7 +299,8 @@ var termin21 = {
     startTime: 10,
     startAndFinishTime: "10:00 - 11:00",
     duration: 1,
-    subs: ["Adrijan", "Dule", "Drazen", "Marija"]
+    subs: ["Adrijan", "Dule", "Drazen", "Marija"],
+    last: ["Adrijan", "Dule", "Drazen", "Marija"]
     };
 var termin22 = {
     naziv: "Pilates",
@@ -288,7 +311,8 @@ var termin22 = {
     startTime: 12,
     startAndFinishTime: "12:00 - 13:00",
     duration: 1,
-    subs: ["Marija", "Veske", "Nidza", "Mina", "Jelica", "Moma", "Drazen"]
+    subs: ["Marija", "Veske", "Nidza", "Mina", "Jelica", "Moma", "Drazen"],
+    last: ["Marija", "Veske", "Nidza", "Mina", "Jelica", "Moma", "Drazen"]
     };
 var termin23 = {
     naziv: "Cardio",
@@ -299,7 +323,8 @@ var termin23 = {
     startTime: 16,
     startAndFinishTime: "16:00 - 17:00",
     duration: 1,
-    subs: ["Veske", "Dule", "Marija", "Nidza", "Vuk", "Jelica", "Drazen", "Adrijan", "Coa", "Tijana"]
+    subs: ["Veske", "Dule", "Marija", "Nidza", "Vuk", "Jelica", "Drazen", "Adrijan", "Coa", "Tijana"],
+    last: ["Veske", "Dule", "Marija", "Nidza", "Vuk", "Jelica", "Drazen", "Adrijan", "Coa", "Tijana"]
     };
 var termin24 = {
     naziv: "Core",
@@ -321,7 +346,8 @@ var termin25 = {
     startTime: 19,
     startAndFinishTime: "20:00 - 21:00",
     duration: 1,
-    subs: ["Adrijan", "Coa", "Tijana"]
+    subs: ["Adrijan", "Coa", "Tijana"],
+    last: ["Adrijan", "Coa", "Tijana"]
     };
 var termin26 = {
     naziv: "Cardio",
@@ -332,7 +358,8 @@ var termin26 = {
     startTime: 21,
     startAndFinishTime: "21:00 - 22:00",
     duration: 1,
-    subs: ["Nidza", "Drazen", "Dule"]
+    subs: ["Nidza", "Drazen", "Dule"],
+    last: ["Nidza", "Drazen", "Dule"]
     };   
     /////////PETAK//////
 var termin27 = {
@@ -344,7 +371,8 @@ var termin27 = {
     startTime: 10,
     startAndFinishTime: "10:00 - 11:00",
     duration: 1,
-    subs: [""]
+    subs: ["Nidza", "Drazen", "Dule"],
+    last: ["Nidza", "Drazen", "Dule"]
     };
 var termin28 = {
     naziv: "Yoga",
@@ -355,7 +383,8 @@ var termin28 = {
     startTime: 11,
     startAndFinishTime: "11:00 - 12:00",
     duration: 1,
-    subs:["Marija", "Veske", "Dule"]
+    subs:["Marija", "Veske", "Dule"],
+    last:["Marija", "Veske", "Dule"]
     };
 var termin29 = {
     naziv: "Pilates",
@@ -366,7 +395,8 @@ var termin29 = {
     startTime: 14,
     startAndFinishTime: "14:00 - 15:00",
     duration: 1,
-    subs:["Vuk", "Dule", "Nidza", "Moma", "Drazen", "Jelica", "Veske", "Tijana", "Adrijan", "Marija"]
+    subs:["Vuk", "Dule", "Nidza", "Moma", "Drazen", "Jelica", "Veske", "Tijana", "Adrijan", "Marija"],
+    last:["Vuk", "Dule", "Nidza", "Moma", "Drazen", "Jelica", "Veske", "Tijana", "Adrijan", "Marija"]
     };
 var termin30 = {
     naziv: "Core",
@@ -377,7 +407,8 @@ var termin30 = {
     startTime: 17,
     startAndFinishTime: "18:00 - 19:00",
     duration: 1,
-    subs:  ["Adrijan", "Moma", "Vuk", "Drazen", "Marija", "Coa", "Mina", "Jelica", "Tijana"]
+    subs:  ["Adrijan", "Moma", "Vuk", "Drazen", "Marija", "Coa", "Mina", "Jelica", "Tijana"],
+    last:  ["Adrijan", "Moma", "Vuk", "Drazen", "Marija", "Coa", "Mina", "Jelica", "Tijana"]
     };
 var termin31 = {
     naziv: "Core",
@@ -388,7 +419,8 @@ var termin31 = {
     startTime: 19,
     startAndFinishTime: "20:00 - 21:00",
     duration: 1,
-    subs: ["Mina", "Nidza", "Vuk"]
+    subs: ["Mina", "Nidza", "Vuk"],
+    last: ["Mina", "Nidza", "Vuk"]
     };
 var termin32 = {
     naziv: "Cardio",
@@ -399,7 +431,8 @@ var termin32 = {
     startTime: 21,
     startAndFinishTime: "21:00 - 22:00",
     duration: 1,
-    subs:["Drazen", "Adrijan", "Veske"]
+    subs:["Drazen", "Adrijan", "Veske"],
+    last:["Drazen", "Adrijan", "Veske"]
     }; 
 
 ///////SUBOTA////////
@@ -412,7 +445,8 @@ var termin33 = {
     startTime: 10,
     startAndFinishTime: "10:00 - 11:00",
     duration: 1,
-    subs: ["Mina", "Nidza", "Moma", "Jelica", "Vuk", "Marija"]
+    subs: ["Mina", "Nidza", "Moma", "Jelica", "Vuk", "Marija"],
+    last: ["Mina", "Nidza", "Moma", "Jelica", "Vuk", "Marija"]
     };
 var termin34 = {
     naziv: "Yoga",
@@ -423,7 +457,8 @@ var termin34 = {
     startTime: 12,
     startAndFinishTime: "12:00 - 13:00",
     duration: 1,
-    subs: ["Marija", "Veske", "Vuk"]
+    subs: ["Marija", "Veske", "Vuk"],
+    last: ["Marija", "Veske", "Vuk"]
     };
 var termin35 = {
     naziv: "Yoga",
@@ -434,7 +469,8 @@ var termin35 = {
     startTime: 13,
     startAndFinishTime: "13:00 - 14:00",
     duration: 1,
-    subs: ["Coa", "Tijana", "Vuk", "Mina", "Dule", "Moma", "Adrijan", "Jelica", "Veske", "Nidza"]
+    subs: ["Coa", "Tijana", "Vuk", "Mina", "Dule", "Moma", "Adrijan", "Jelica", "Veske", "Nidza"],
+    last: ["Coa", "Tijana", "Vuk", "Mina", "Dule", "Moma", "Adrijan", "Jelica", "Veske", "Nidza"]
     };
 var termin36 = {
     naziv: "Pilates",
@@ -445,7 +481,8 @@ var termin36 = {
     startTime: 15,
     startAndFinishTime: "15:00 - 16:00",
     duration: 1,
-    subs: ["Moma", "Drazen", "Vuk", "Coa", "Nidza", "Dule"]
+    subs: ["Moma", "Drazen", "Vuk", "Coa", "Nidza", "Dule"],
+    last: ["Moma", "Drazen", "Vuk", "Coa", "Nidza", "Dule"]
     };
 var termin37 = {
     naziv: "Cardio",
@@ -456,7 +493,8 @@ var termin37 = {
     startTime: 18,
     startAndFinishTime: "18:00 - 19:00",
     duration: 1,
-    subs: ["Coa", "Marija", "Vuk", "Moma", "Mina", "Jelica", "Drazen", "Tijana", "Adrijan", "Nidza"]
+    subs: ["Coa", "Marija", "Vuk", "Moma", "Mina", "Jelica", "Drazen", "Tijana", "Adrijan", "Nidza"],
+    last: ["Coa", "Marija", "Vuk", "Moma", "Mina", "Jelica", "Drazen", "Tijana", "Adrijan", "Nidza"]
     };
 var termin38 = {
     naziv: "Core",
@@ -467,7 +505,8 @@ var termin38 = {
     startTime: 19,
     startAndFinishTime: "19:00 - 20:00",
     duration: 1,
-    subs: ["Marija", "Veske", "Nidza", "Mina", "Jelica", "Moma", "Drazen"]
+    subs: ["Marija", "Veske", "Nidza", "Mina", "Jelica", "Moma", "Drazen"],
+    last: ["Marija", "Veske", "Nidza", "Mina", "Jelica", "Moma", "Drazen"]
     };
 var termin39 = {
     naziv: "Core",
@@ -478,7 +517,8 @@ var termin39 = {
     startTime: 20,
     startAndFinishTime: "20:00 - 21:00",
     duration: 1,
-    subs: ["Coa", "Marija", "Vuk", "Moma", "Mina", "Jelica", "Drazen", "Tijana", "Adrijan", "Nidza"]
+    subs: ["Coa", "Marija", "Vuk", "Moma", "Mina", "Jelica", "Drazen", "Tijana", "Adrijan", "Nidza"],
+    last: ["Coa", "Marija", "Vuk", "Moma", "Mina", "Jelica", "Drazen", "Tijana", "Adrijan", "Nidza"]
     };
 var termin40 = {
     naziv: "Cardio",
@@ -489,7 +529,8 @@ var termin40 = {
     startTime: 21,
     startAndFinishTime: "21:00 - 22:00",
     duration: 1,
-    subs: ["Nidza", "Drazen", "Dule"]
+    subs: ["Nidza", "Drazen", "Dule"],
+    last: ["Nidza", "Drazen", "Dule"]
     };  
 //////NEDELJA//////
 var termin41 = {
@@ -501,7 +542,8 @@ var termin41 = {
     startTime: 18,
     startAndFinishTime: "18:00 - 19:00",
     duration: 1,
-    subs: ["Marija", "Veske", "Vuk"]
+    subs: ["Marija", "Veske", "Vuk"],
+    last: ["Marija", "Veske", "Vuk"]
     };
 var termin42 = {
     naziv: "Core",
@@ -512,7 +554,8 @@ var termin42 = {
     startTime: 19,
     startAndFinishTime: "19:00 - 20:00",
     duration: 1,
-    subs: ["Marija", "Veske", "Nidza", "Mina", "Jelica", "Moma", "Drazen"]
+    subs: ["Marija", "Veske", "Nidza", "Mina", "Jelica", "Moma", "Drazen"],
+    last: ["Marija", "Veske", "Nidza", "Mina", "Jelica", "Moma", "Drazen"]
     };
 var termin43 = {
     naziv: "Core",
@@ -523,7 +566,8 @@ var termin43 = {
     startTime: 20,
     startAndFinishTime: "20:00 - 21:00",
     duration: 1,
-    subs: ["Coa", "Tijana", "Vuk", "Mina", "Dule", "Moma", "Adrijan", "Jelica", "Veske", "Nidza"]
+    subs: ["Coa", "Tijana", "Vuk", "Mina", "Dule", "Moma", "Adrijan", "Jelica", "Veske", "Nidza"],
+    last: ["Coa", "Tijana", "Vuk", "Mina", "Dule", "Moma", "Adrijan", "Jelica", "Veske", "Nidza"]
     };
 var termin44 = {
     naziv: "Cardio",
@@ -534,7 +578,8 @@ var termin44 = {
     startTime: 21,
     startAndFinishTime: "21:00 - 22:00",
     duration: 1,
-    subs:  ["Nidza", "Vuk", "Tijana"]
+    subs:  ["Nidza", "Vuk", "Tijana"],
+    last:  ["Nidza", "Vuk", "Tijana"]
     };  
 var termini= [termin1, termin2, termin3, termin4, termin5,
             termin7, termin8, termin9, termin11, termin12,
@@ -601,10 +646,10 @@ function makeReservation(param){
     let id = param.closest("td").id;
     let index = findIndex(id);
 
-    console.log(termini[index]);
-    console.log(termini[index].current);
-    console.log(termini[index].max);
-    
+    //console.log(termini[index]);
+    //console.log(termini[index].current);
+   // console.log(termini[index].max);
+
     if(termini[index].current == termini[index].max){
         Swal.fire("Zao nam je ovaj termin je popunjen.")
         return;
@@ -629,11 +674,88 @@ function findIndex(id){
         }       
     }
 }
+/*
+OVO SU TI ARGUMENTI KAD BUDES POZIVAO funkciju getLvl
 
+Hat-ha
+Classic
+Rowing
+GluteCore
+Cycling
+Crossfit
+Iyengar
+Reformer
+Stoti
+Vinyasa
+BadAss
+Running
+*/
 
-//dodavanje komentara
+//dodavanje komentara vrsta-komentar-kocena
 function addComment(arg, str, ocena){
     loadLocalStorage();
+    if(ocena == ""){
+        Swal.fire('Niste uneli ocenu.');
+        return;
+    }
+    let nazivTrening = "";
+    switch(arg) {
+        case 'pilatesClassic':
+             nazivTrening = 'Classic';
+            break;
+        case 'pilatesStott':
+            nazivTrening = 'Stoti';
+            break;
+        case 'pilatesReformer':
+            nazivTrening = 'Reformer';
+            break;
+        case 'coreCrossfit':
+            nazivTrening = 'Crossfit';
+            break;
+        case 'coreGluteCore':
+            nazivTrening = 'GluteCore';
+            break;
+        case 'coreBadAss':
+            nazivTrening = 'BadAss';
+            break;
+        case 'jogaHatHa':
+            nazivTrening = 'Hat-ha';
+            break;
+        case 'jogaIyengar':
+            nazivTrening = 'Iyengar';
+            break;
+        case 'jogaVinyasa':
+            nazivTrening = 'Vinyasa';
+            break;
+        case 'cardioRowing':
+            nazivTrening = 'Rowing';
+            break;
+        case 'cardioCycling':
+            nazivTrening = 'Cycling';
+            break;
+        case 'cardioRunning':
+            nazivTrening = 'Running';
+            break;
+        default:
+          // code block
+      }
+    let bio = false;
+    //console.log(nazivTrening);
+    for (let i = 0; i < termini.length; i++) {
+        if(termini[i].vrsta == nazivTrening){
+            for (let j = 0; j < termini[i].last.length; j++) {
+                if(termini[i].last[j] == localStorage.getItem("username")){
+                    bio  = true;
+                }
+                
+            }
+        }
+    }
+    if(!bio){
+        Swal.fire('Niste bili na ovom treningu.');
+        saveLocalStorage();
+        return;
+    }
     commentsMap.get(arg).push([str,ocena,localStorage.getItem("username"), false]);
     saveLocalStorage();
 }
@@ -816,10 +938,11 @@ function showInitialCommentsPilates(){
 function calculateAvgRaiting(id,idField){
     loadLocalStorage();
     var ret = 0;
+    console.log(commentsMap.get(id));
     for (let i = 0; i < commentsMap.get(id).length; i++) {
-        ret+= parseInt(commentsMap.get(id)[i][1]);
+            ret+= parseInt(commentsMap.get(id)[i][1]);      
     }
-    
+    console.log(ret);
     document.getElementById(idField).innerHTML = (ret/commentsMap.get(id).length).toFixed(1);
 }
 
@@ -884,6 +1007,8 @@ function quitReservation(id){
     let a = document.querySelector(index).children;
     //console.log(a);
     //a[2].remove();
+    a[0].style.visibility="hidden";
+    a[1].style.visibility="hidden";
     a[2].style.visibility="hidden";
     a[1].style.visibility="hidden";
     a[0].style.visibility="hidden";
