@@ -940,12 +940,10 @@ function calculateAvgRaiting(id,idField){
     var ret = 0;
     console.log(commentsMap.get(id));
     for (let i = 0; i < commentsMap.get(id).length; i++) {
-        if(commentsMap.get(id)[i][1]!= ""){
             ret+= parseInt(commentsMap.get(id)[i][1]);      
-        }
     }
     console.log(ret);
-    document.getElementById(idField).innerHTML = ret/commentsMap.get(id).length;
+    document.getElementById(idField).innerHTML = (ret/commentsMap.get(id).length).toFixed(1);
 }
 
 /*
