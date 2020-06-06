@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 
+    <script src="js/tmp_script.js"></script>
 </head>
 <body>
     <!-- Page Preloder -->
@@ -70,9 +71,9 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb-text">
-                        <h2>SCHEDULE & CLASSES</h2>
+                        <h2>Massages</h2>
                         <div class="breadcrumb-controls">
-                            <a href="#"><i class="fa fa-home"></i> Home</a>
+                            <a href="index.html"><i class="fa fa-home"></i> Home</a>
                             <span>Massages</span>
                         </div>
                     </div>
@@ -124,18 +125,18 @@
                             <form action="">
                                 <div class="row">
                                     <div class="col-lg-3">
-                                        <input type="text" placeholder="Name" id="NameMassage">
+                                        <input type="text" placeholder="Name" id="NameMassage" required>
                                     </div>
                                     <div class="col-lg-3">
-                                        <input type="text" placeholder="Email" id = "EmailMassage">
+                                        <input type="text" placeholder="Email" id = "EmailMassage" required>
                                     </div>
                                     <div class="col-lg-3">
-                                        <input type="text" placeholder="Phone" id = "PhoneMassage">
+                                        <input type="text" placeholder="Phone" id = "PhoneMassage" required>
                                     </div>
                                     <div class="col-lg-3">
-                                        <input type="date" placeholder="Date" id = "DateMassage">
+                                        <input type="date" placeholder="Date" id = "DateMassage" required>
                                     </div>
-                                    <div class="col-lg-12">
+                                    <div class="col-lg-12 text-center">
                                         <textarea placeholder="Describe your problem..." id='AboutMassage'></textarea>
                                         <button type="submit" class="leave-btn" onclick="nutritionApointment(document.getElementById('NameMassage').value,document.getElementById('EmailMassage').value,document.getElementById('PhoneMassage').value,document.getElementById('DateMassage').value,document.getElementById('AboutMassage').value)">Reserve your massage</button>
                                     </div>

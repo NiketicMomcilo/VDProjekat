@@ -17,7 +17,7 @@
 
      <script src="js/rate_training.js"></script>
 </head>
-<body onload="showInitialCommentsCore()">
+<body onload="showInitialCommentsCore(); calculateAvgRaiting('coreCrossfit','avgRateCrossfit'); calculateAvgRaiting('coreBadAss','avgRateBadass'); calculateAvgRaiting('coreGluteCore','avgRateGlutecore');">
     <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>
@@ -69,7 +69,7 @@
                     <div class="breadcrumb-text">
                         <h2>CORE</h2>
                         <div class="breadcrumb-controls">
-                            <a href="#"><i class="fa fa-home"></i> Home</a>
+                            <a href="index.html"><i class="fa fa-home"></i> Home</a>
                             <a href="workouts.html">Workouts</a>
                             <span>Core</span>
                         </div>
@@ -99,7 +99,7 @@
     <!-- About Section End -->
 
     <!-- Video Section Begin -->
-    <section class="video-section set-bg" data-setbg="img/programs/workouts/core/crossfit-core-video-bg.jpg">
+    <section class="video-section set-bg" data-setbg="img/programs/workouts/core/crossfit-core-video-bg.jpg" id='crossfitCore'>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -128,6 +128,7 @@
                 <div class="col-lg-12">
                     <div class="about-text text-left">
                         <h2>CROSSFIT</h2>
+                        <p>Difficulty: 5 Rating: <span id='avgRateCrossfit'></span></p>
                         <p class="long-details">CrossFit is promoted as both a physical exercise philosophy and a competitive fitness sport, incorporating elements from high-intensity interval training, Olympic weightlifting, plyometrics, powerlifting, gymnastics, girevoy sport, calisthenics, strongman, and other exercises. It is practiced by members of over 13,000 affiliated gyms, roughly half of which are located in the United States, and by individuals who complete daily workouts (otherwise known as "WODs" or "workouts of the day"). CrossFit has been criticized for allegedly causing people to suffer from unnecessary injuries and exertional rhabdomyolysis, a possible life-threatening breakdown of muscle from extreme exertion.
                         </p>
                     </div>
@@ -227,7 +228,7 @@
     <!-- Comment Section End -->
 
     <!-- Video Section Begin -->
-    <section class="video-section set-bg" data-setbg="img/programs/workouts/core/glutecore-core-video-bg.jpg">
+    <section class="video-section set-bg" data-setbg="img/programs/workouts/core/glutecore-core-video-bg.jpg" id='glutecoreCore'>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -256,6 +257,7 @@
                 <div class="col-lg-12">
                     <div class="about-text text-left">
                         <h2>Glute & Core</h2>
+                        <p>Difficulty: 4 Rating: <span id='avgRateGlutecore'></span></p>
                         <p class="long-details">If your body is a car, your glutes are often described as the engine. It doesn’t matter if you’re swinging something, squatting, or jumping – your glutes are involved; and if they’re not, then you’re going to experience unnecessary stress in your lower-back.
                             Your gluteus maximus is a hip extensor and external hip rotator, connecting your sacrum (lower-back) and pelvis (hip) to your femur (leg).
                             These muscles are hip abductors, but also assist in internal and external rotation. Your glute medius is completely covered by the gluteus maximus.
@@ -347,7 +349,7 @@
     <!-- Comment Section End -->
 
     <!-- Video Section Begin -->
-    <section class="video-section set-bg" data-setbg="img/programs/workouts/core/badass-core-video-bg.jpg">
+    <section class="video-section set-bg" data-setbg="img/programs/workouts/core/badass-core-video-bg.jpg" id='badassCore'>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -375,6 +377,7 @@
                 <div class="col-lg-12">
                     <div class="about-text text-left">
                         <h2>BadAss</h2>
+                        <p>Difficulty: 5 Rating: <span id='avgRateBadass'></span></p>
                         <p class="long-details">BadAss - High Repetition Training - a new, revolutionary, science-based method that increases muscle tone, accelerates fat burning and shapes the buttocks. This training is intended for those women who want to develop a beautiful and strong buttocks.
                         </p>
                     </div>

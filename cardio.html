@@ -21,7 +21,7 @@
 
     <script src="js/rate_training.js"></script>
 </head>
-<body onload="showInitialCommentsCardio()">
+<body onload="showInitialCommentsCardio(); calculateAvgRaiting('cardioRowing','avgRateRowing'); calculateAvgRaiting('cardioCycling','avgRateCycling'); calculateAvgRaiting('cardioRunning','avgRateRunning'); ">
     <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>
@@ -73,7 +73,7 @@
                     <div class="breadcrumb-text">
                         <h2>CORE</h2>
                         <div class="breadcrumb-controls">
-                            <a href="#"><i class="fa fa-home"></i> Home</a>
+                            <a href="index.html"><i class="fa fa-home"></i> Home</a>
                             <a href="workouts.html">Workouts</a>
                             <span>Cardio</span>
                         </div>
@@ -103,7 +103,7 @@
     <!-- About Section End -->
 
     <!-- Video Section Begin -->
-    <section class="video-section set-bg" data-setbg="img/programs/workouts/cardio/rowing-cardio-video-bg.jpg">
+    <section class="video-section set-bg" data-setbg="img/programs/workouts/cardio/rowing-cardio-video-bg.jpg" id='rowingCardio'>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -126,12 +126,13 @@
     <!-- Video Section End -->
 
     <!-- Program info section begin-->
-    <section class='classes-section' style='padding-top:20px;'>
+    <section  class='classes-section' style='padding-top:20px;'>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="about-text text-left">
                         <h2>ROWING</h2>
+                        <p>Difficulty: 5 Rating: <span id='avgRateRowing'></span></p>
                         <p class="long-details">An indoor rower, or rowing machine, is a machine used to simulate the action of watercraft rowing for the purpose of exercise or training for rowing. Indoor rowing has become established as a sport in its own right. The term "indoor rower" also refers to a participant in this sport.
                             Modern indoor rowers are often known as ergometers (colloquially erg or ergo), which is technically incorrect, as an ergometer is a device which measures the amount of work performed. The indoor rower is calibrated to measure the amount of energy the rower is using through their use of the equipment. Typically the display of the ergometer will show the time it takes to row 500m at each strokes power, also called split rate, or split.
                             For exercise, one advantage of a rower compared to other types of machines is the high count of muscles worked on - a dozen.
@@ -233,7 +234,7 @@
     <!-- Comment Section End -->
 
     <!-- Video Section Begin -->
-    <section class="video-section set-bg" data-setbg="img/programs/workouts/cardio/cycling-cardio-video-bg.jpg">
+    <section class="video-section set-bg" data-setbg="img/programs/workouts/cardio/cycling-cardio-video-bg.jpg" id='cyclingCardio'>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -262,6 +263,7 @@
                 <div class="col-lg-12">
                     <div class="about-text text-left">
                         <h2>CYCLING</h2>
+                        <p>Difficulty: 4 Rating: <span id='avgRateCycling'></span></p>
                         <p class="long-details">Indoor cycling, often also called spinning, as an organized sport , is a form of exercise with classes focusing on endurance, strength, intervals, high intensity (race days) and recovery, and involves using a special stationary exercise bicycle with a weighted flywheel in a classroom setting. When people took cycling indoors in the late 19th century, whether for reasons of weather or convenience, technology created faster, more compact and efficient machines over time. The first iterations of the stationary bike ranged from strange contraptions like the Gymnasticon to regular bicycles placed atop rollers.
                         </p>
                     </div>
@@ -351,7 +353,7 @@
     <!-- Comment Section End -->
 
     <!-- Video Section Begin -->
-    <section class="video-section set-bg" data-setbg="img/programs/workouts/cardio/running-cardio-video-bg.jpg">
+    <section class="video-section set-bg" data-setbg="img/programs/workouts/cardio/running-cardio-video-bg.jpg" id='runningCardio'>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -379,6 +381,7 @@
                 <div class="col-lg-12">
                     <div class="about-text text-left">
                         <h2>RUNNING</h2>
+                        <p>Difficulty: 4 Rating: <span id='avgRateRunning'></span></p>
                         <p class="long-details">The forerunner of exercise treadmills was designed to diagnose heart and lung diseases, and was invented by Robert Bruce and Wayne Quinton at the University of Washington in 1952.Kenneth H. Cooper's research on the benefits of aerobic exercise, published in 1968, provided a medical argument to support the commercial development of the home treadmill and exercise bike.
                         </p>
                     </div>
