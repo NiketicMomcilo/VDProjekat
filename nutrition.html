@@ -19,10 +19,13 @@
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 
+
+    <script src="js/tmp_script.js"></script>
+
     <script src="js/jsPDF/dist/jspdf.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
 </head>
-<body>
+<body onload="setRequiredFields()">
     <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>
@@ -74,7 +77,7 @@
                     <div class="breadcrumb-text">
                         <h2>NUTRITION</h2>
                         <div class="breadcrumb-controls">
-                            <a href="#"><i class="fa fa-home"></i> Home</a>
+                            <a href="index.html"><i class="fa fa-home"></i> Home</a>
                             <span>Nutrition</span>
                         </div>
                     </div>
@@ -126,19 +129,19 @@
                             <form action="">
                                 <div class="row">
                                     <div class="col-lg-3">
-                                        <input type="text" placeholder="Name" id="NameNutrition">
+                                        <input type="text" placeholder="Name" id="NameNutrition" required>
                                     </div>
                                     <div class="col-lg-3">
-                                        <input type="text" placeholder="Email" id="EmailNutrition">
+                                        <input type="text" placeholder="Email" id="EmailNutrition" required>
                                     </div>
                                     <div class="col-lg-3">
-                                        <input type="text" placeholder="Phone" id="PhoneNutrition">
+                                        <input type="text" placeholder="Phone" id="PhoneNutrition" required>
                                     </div>
                                     <div class="col-lg-3">
-                                        <input type="date" placeholder="Date" id = "DateNutrition">
+                                        <input type="date" placeholder="Date" id = "DateNutrition" required>
                                     </div>
-                                    <div class="col-lg-12">
-                                        <textarea placeholder="Describe your problem..." id='AboutNutrition'></textarea>
+                                    <div class="col-lg-12 text-center">
+                                        <textarea placeholder="Describe your problem..." id='AboutNutrition' required></textarea>
                                         <button type="submit" class="leave-btn" onclick="nutritionAppointment(document.getElementById('NameNutrition').value,document.getElementById('EmailNutrition').value,document.getElementById('PhoneNutrition').value,document.getElementById('DateNutrition').value,document.getElementById('AboutNutrition').value)">Reserve your appointment</button>
                                     </div>
                                 </div>

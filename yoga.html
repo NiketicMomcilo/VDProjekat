@@ -21,7 +21,7 @@
 
     <script src="js/rate_training.js"></script>
 </head>
-<body onload="showInitialCommentsJoga()">
+<body onload="showInitialCommentsJoga(); calculateAvgRaiting('jogaIyengar','avgRateIyengar'); calculateAvgRaiting('jogaVinyasa','avgRateVinyasa'); calculateAvgRaiting('jogaHatHa','avgRateHatha');">
     <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>
@@ -73,7 +73,7 @@
                     <div class="breadcrumb-text">
                         <h2>YOGA</h2>
                         <div class="breadcrumb-controls">
-                            <a href="#"><i class="fa fa-home"></i> Home</a>
+                            <a href="index.html"><i class="fa fa-home"></i> Home</a>
                             <a href="workouts.html">Workouts</a>
                             <span>Yoga</span>
                         </div>
@@ -103,7 +103,7 @@
     <!-- About Section End -->
 
     <!-- Video Section Begin -->
-    <section class="video-section set-bg" data-setbg="img/programs/workouts/yoga/iyengar-yoga-video-bg.jpg">
+    <section class="video-section set-bg" data-setbg="img/programs/workouts/yoga/iyengar-yoga-video-bg.jpg" id='iyengarYoga'>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -131,6 +131,7 @@
                 <div class="col-lg-12">
                     <div class="about-text text-left">
                         <h2>IYENGAR YOGA</h2>
+                        <p>Difficulty: 2 Rating: <span id='avgRateIyengar'></span></p>
                         <p class="long-details">Iyengar Yoga, named after and developed by B. K. S. Iyengar, and described in his bestselling 1966 book Light on Yoga, is a form of yoga as exercise that has an emphasis on detail, precision and alignment in the performance of yoga postures (asanas).
                             The style often makes use of props, such as belts, blocks, and blankets, as aids in performing the asanas. The props enable beginning students, the elderly, or those with physical limitations to perform the asanas correctly, minimising the risk of injury or strain.
                         </p>
@@ -233,7 +234,7 @@
     <!-- Comment Section End -->
 
     <!-- Video Section Begin -->
-    <section class="video-section set-bg" data-setbg="img/programs/workouts/yoga/hatha-yoga-video-bg.jpg">
+    <section class="video-section set-bg" data-setbg="img/programs/workouts/yoga/hatha-yoga-video-bg.jpg" id='hathaYoga'>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -261,6 +262,7 @@
                 <div class="col-lg-12">
                     <div class="about-text text-left">
                         <h2>HATHA YOGA</h2>
+                        <p>Difficulty: 1 Rating: <span id='avgRateHatha'></span></p>
                         <p class="long-details">Success isn’t really that difficult. There is a significant portion of
                             the population here in North America, that actually want and need success to be hard! For
                             those of you who are serious about having more, doing more, giving more and being more.
@@ -352,7 +354,7 @@
     <!-- Comment Section End -->
 
     <!-- Video Section Begin -->
-    <section class="video-section set-bg" data-setbg="img/programs/workouts/yoga/vinyasa-yoga-video-bg.jpg">
+    <section class="video-section set-bg" data-setbg="img/programs/workouts/yoga/vinyasa-yoga-video-bg.jpg" id='vinyasaYoga'>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -380,6 +382,7 @@
                 <div class="col-lg-12">
                     <div class="about-text text-left">
                         <h2>VINYASA YOGA</h2>
+                        <p>Difficulty: 2 Rating: <span id='avgRateVinyasa'></span></p>
                         <p class="long-details">Vinyasa is a style of yoga characterized by stringing postures together so that you move from one to another, seamlessly, using breath.  Commonly referred to as “flow” yoga, it is sometimes confused with “power yoga“.
                         </p>
                     </div>

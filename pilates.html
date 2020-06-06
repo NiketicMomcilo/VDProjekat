@@ -21,7 +21,7 @@
 
     <script src="js/rate_training.js"></script>
 </head>
-<body onload="showInitialCommentsPilates()">
+<body onload="showInitialCommentsPilates(); calculateAvgRaiting('pilatesStott','avgRateStott'); calculateAvgRaiting('pilatesReformer','avgRateReformer'); calculateAvgRaiting('pilatesClassic','avgRateClassical');">
     <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>
@@ -73,7 +73,7 @@
                     <div class="breadcrumb-text">
                         <h2>PILATES</h2>
                         <div class="breadcrumb-controls">
-                            <a href="#"><i class="fa fa-home"></i> Home</a>
+                            <a href="index.html"><i class="fa fa-home"></i> Home</a>
                             <a href="workouts.html">Workouts</a>
                             <span>Pilates</span>
                         </div>
@@ -103,7 +103,7 @@
     <!-- About Section End -->
 
     <!-- Video Section Begin -->
-    <section class="video-section set-bg" data-setbg="img/programs/workouts/pilates/stott-pilates-video-bg.jpg">
+    <section class="video-section set-bg" data-setbg="img/programs/workouts/pilates/stott-pilates-video-bg.jpg" id='stottPilates'>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -131,6 +131,7 @@
                 <div class="col-lg-12">
                     <div class="about-text text-left">
                         <h2>STOTT PILATES</h2>
+                        <p>Difficulty: 2 Rating: <span id='avgRateStott'></span></p>
                         <p class="long-details">Stott Pilates is a branded version of the Pilates method of physical exercise that was developed by Moira Merrithew (née Stott) and commercialized by Moira with her husband, Lindsay Merrithew, starting in 1988. The most significant difference between Stott Pilates and Joseph Pilates's original method of the early 1900s is that Stott focused on having a neutral spine posture and generated a different sequence of exercises.
                         </p>
                     </div>
@@ -230,7 +231,7 @@
     <!-- Comment Section End -->
 
     <!-- Video Section Begin -->
-    <section class="video-section set-bg" data-setbg="img/programs/workouts/pilates/classical-pilates-video-bg.jpg">
+    <section class="video-section set-bg" data-setbg="img/programs/workouts/pilates/classical-pilates-video-bg.jpg" id='classicalPilates'>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -258,6 +259,7 @@
                 <div class="col-lg-12">
                     <div class="about-text text-left">
                         <h2>CLASSICAL PILATES</h2>
+                        <p>Difficulty: 1 Rating: <span id='avgRateClassical'></span></p>
                         <p class="long-details">Classic Pilates is based on the original form of Pilates created in 1920s. It is combination of both mat and apparatus workout. This a little complex type of Pilates as the muscles your entire body is involved in it. It is a little complex but best of all as it helps to strengthen your core and other body muscles.
                         </p>
                     </div>
@@ -347,7 +349,7 @@
     <!-- Comment Section End -->
 
     <!-- Video Section Begin -->
-    <section class="video-section set-bg" data-setbg="img/programs/workouts/pilates/reformer-pilates-video-bg.jpg">
+    <section class="video-section set-bg" data-setbg="img/programs/workouts/pilates/reformer-pilates-video-bg.jpg" id='reformerPilates'>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -375,6 +377,7 @@
                 <div class="col-lg-12">
                     <div class="about-text text-left">
                         <h2>REFORMER PILATES</h2>
+                        <p>Difficulty: 2 Rating: <span id='avgRateReformer'></span></p>
                         <p class="long-details">This form of Pilates is quite challenging than the previous one. Some exercises performed on the reformers are same as mat exercises, just that they are performed on the reformer- a piece of equipment with a flat platform that can slide back and forth and adjustable bar for resistance. Reformer Pilates is more advanced for of Pilates and should be done only under proper guidance
                         </p>
                     </div>

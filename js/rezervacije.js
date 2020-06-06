@@ -653,6 +653,7 @@ function showContent(id, trening) {
     }
     saveLocalStorage();
 }
+
 //onload za jogu
 function showInitialCommentsJoga(){
     loadLocalStorage();
@@ -812,14 +813,14 @@ function showInitialCommentsPilates(){
     saveLocalStorage();
 }
 
-function calculateAvgRaiting(id){
+function calculateAvgRaiting(id,idField){
     loadLocalStorage();
     var ret = 0;
     for (let i = 0; i < commentsMap.get(id).length; i++) {
         ret+= commentsMap.get(id)[i][1];
     }
-    return ret/commentsMap.get(id).length;
-    saveLocalStorage();
+    
+    document.getElementById(idField).innerHTML = ret/commentsMap.get(id).length;
 }
 
 /*
@@ -849,58 +850,6 @@ function getLvl(id){
     saveLocalStorage();
 }
 
-
-function nutritionAppointment(imeVal,emailVal,telefonVal,datumVal,opisVal){
-    var nutritionObj = {
-        ime: imeVal,
-        email: emailVal,
-        phone: telefonVal, 
-        datum: datumVal,
-        opis: opisVal,
-    };
-
-    var doc = new jsPDF();
-    doc.setFont('courier');
-    doc.setFontType('bold');
-    doc.text(20,20,"THANK YOU FOR MAKING AN APPOINTMENT!")
-
-    doc.setFontType('normal');
-    doc.text(20,30,"Appointment information:");
-    doc.text(20,40,"Name: " + imeVal);
-    doc.text(20,50,"Email: " + emailVal);
-    doc.text(20,60,"Phone: " + telefonVal);
-    doc.text(20,70,"Date: " + datumVal);
-    doc.text(20,80,"Your question: " + opisVal); 
-    
-
-   doc.save('appointment_info.pdf');
-    
-  }
-
-  function reserveMassage(imeVal,emailVal,telefonVal,datumVal,opisVal){
-    var massageObj = {
-        ime: imeVal,
-        email: emailVal,
-        phone: telefonVal, 
-        datum: datumVal,
-        opis: opisVal,
-    };
-
-    var doc = new jsPDF();
-    doc.setFont('courier');
-    doc.setFontType('bold');
-    doc.text(20,20,"THANK YOU FOR MAKING AN APPOINTMENT!")
-
-    doc.setFontType('normal');
-    doc.text(20,30,"Appointment information:");
-    doc.text(20,40,"Name: " + imeVal);
-    doc.text(20,50,"Email: " + emailVal);
-    doc.text(20,60,"Phone: " + telefonVal);
-    doc.text(20,70,"Date: " + datumVal);
-    doc.text(20,80,"Your question: " + opisVal); 
-    doc.save('massage_confirm.pdf');
-  }
-
 function insertMyReservations(){
     loadLocalStorage();
     //upisuje sve moje termine u raspored
@@ -921,6 +870,9 @@ function insertMyReservations(){
         if(reserved){
             a[2].classList.remove('hide');
             a[2].classList.add('show');
+        }else{
+            a[0].style.visibility="hidden";
+            a[1].style.visibility="hidden";
         }
     }
     saveLocalStorage();
@@ -933,6 +885,9 @@ function quitReservation(id){
     //console.log(a);
     //a[2].remove();
     a[2].style.visibility="hidden";
+    a[1].style.visibility="hidden";
+    a[0].style.visibility="hidden";
+        
 
     var r = /\d+/;
     let param = findIndex((td.match(r)));
