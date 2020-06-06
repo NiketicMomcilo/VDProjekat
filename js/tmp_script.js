@@ -1,5 +1,5 @@
 function getUsername(){
-    document.getElementById("profile_username").innerHTML = localStorage.getItem('username1');
+    document.getElementById("profile_username").innerHTML = localStorage.getItem('username');
 }
 
 function nutritionAppointment(imeVal,emailVal,telefonVal,datumVal,opisVal){

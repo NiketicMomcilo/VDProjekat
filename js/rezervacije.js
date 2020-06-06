@@ -817,10 +817,10 @@ function calculateAvgRaiting(id,idField){
     loadLocalStorage();
     var ret = 0;
     for (let i = 0; i < commentsMap.get(id).length; i++) {
-        ret+= commentsMap.get(id)[i][1];
+        ret+= parseInt(commentsMap.get(id)[i][1]);
     }
     
-    document.getElementById(idField).innerHTML = ret/commentsMap.get(id).length;
+    document.getElementById(idField).innerHTML = (ret/commentsMap.get(id).length).toFixed(1);
 }
 
 /*
