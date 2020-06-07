@@ -50,6 +50,7 @@ var termin1 = {
     nivo: "lvl 1", 
     max: 10,
     current: 4,
+    day:"Monday",
     startTime: 10,
     startAndFinishTime: "10:00 - 11:00",
     duration: 1,
@@ -62,6 +63,7 @@ var termin2 = {
     nivo: "lvl 1", 
     max: 10,
     current: 10,
+    day:"Monday",
     startTime: 12,
     startAndFinishTime: "12:00 - 13:00",
     duration: 1,
@@ -74,6 +76,7 @@ var termin3 = {
     nivo: "lvl 5", 
     max: 10,
     current: 2,
+    day:"Monday",
     startTime: 16,
     startAndFinishTime: "16:00 - 17:00",
     duration: 1,
@@ -86,6 +89,7 @@ var termin4 = {
     nivo: "lvl 4", 
     max: 10,
     current: 9,
+    day:"Monday",
     startTime: 17,
     startAndFinishTime: "18:00 - 19:00",
     duration: 1,
@@ -99,6 +103,7 @@ var termin5 = {
     nivo: "lvl 5", 
     max: 10,
     current: 3,
+    day:"Monday",
     startTime: 19,
     startAndFinishTime: "20:00 - 21:00",
     duration: 1,
@@ -111,6 +116,7 @@ var termin6 = {
     nivo: "lvl 5", 
     max: 10,
     current: 3,
+    day:"Monday",
     startTime: 21,
     startAndFinishTime: "21:00 - 22:00",
     duration: 1,
@@ -126,6 +132,7 @@ var termin7 = {
     nivo: "lvl 2", 
     max: 10,
     current: 10,
+    day:"Tuesday",
     startTime: 10,
     startAndFinishTime: "10:00 - 11:00",
     duration: 1,
@@ -138,6 +145,7 @@ var termin8 = {
     nivo: "lvl 2", 
     max: 10,
     current: 3,
+    day:"Tuesday",
     startTime: 11,
     startAndFinishTime: "11:00 - 12:00",
     duration: 1,
@@ -150,6 +158,7 @@ var termin9 = {
     nivo: "lvl 2", 
     max: 10,
     current: 3,
+    day:"Tuesday",
     startTime: 14,
     startAndFinishTime: "14:00 - 15:00",
     duration: 1,
@@ -162,6 +171,7 @@ var termin10 = {
     nivo: "lvl 4", 
     max: 10,
     current: 9,
+    day:"Tuesday",
     startTime: 17,
     startAndFinishTime: "18:00 - 19:00",
     duration: 1,
@@ -174,6 +184,7 @@ var termin11 = {
     nivo: "lvl 5", 
     max: 10,
     current: 3,
+    day:"Tuesday",
     startTime: 19,
     startAndFinishTime: "20:00 - 21:00",
     duration: 1,
@@ -186,6 +197,7 @@ var termin12 = {
     nivo: "lvl 5", 
     max: 10,
     current: 3,
+    day:"Tuesday",
     startTime: 21,
     startAndFinishTime: "21:00 - 22:00",
     duration: 1,
@@ -199,6 +211,7 @@ var termin13 = {
     nivo: "lvl 2", 
     max: 10,
     current: 10,
+    day:"Wensday",
     startTime: 10,
     startAndFinishTime: "10:00 - 11:00",
     duration: 1,
@@ -211,6 +224,7 @@ var termin14 = {
     nivo: "lvl 2", 
     max: 10,
     current: 3,
+    day:"Wensday",
     startTime: 12,
     startAndFinishTime: "12:00 - 13:00",
     duration: 1,
@@ -223,6 +237,7 @@ var termin15 = {
     nivo: "lvl 1", 
     max: 10,
     current: 4,
+    day:"Wensday",
     startTime: 13,
     startAndFinishTime: "13:00 - 14:00",
     duration: 1,
@@ -235,6 +250,7 @@ var termin16 = {
     nivo: "lvl 1", 
     max: 10,
     current: 6,
+    day:"Wensday",
     startTime: 15,
     startAndFinishTime: "15:00 - 16:00",
     duration: 1,
@@ -247,6 +263,7 @@ var termin17 = {
     nivo: "lvl 5", 
     max: 10,
     current: 3,
+    day:"Wensday",
     startTime: 18,
     startAndFinishTime: "18:00 - 19:00",
     duration: 1,
@@ -259,6 +276,7 @@ var termin18 = {
     nivo: "lvl 4", 
     max: 10,
     current: 10,
+    day:"Wensday",
     startTime: 19,
     startAndFinishTime: "19:00 - 20:00",
     duration: 1,
@@ -271,6 +289,7 @@ var termin19 = {
     nivo: "lvl 5", 
     max: 10,
     current: 8,
+    day:"Wensday",
     startTime: 20,
     startAndFinishTime: "20:00 - 21:00",
     duration: 1,
@@ -283,6 +302,7 @@ var termin20 = {
     nivo: "lvl 5", 
     max: 10,
     current: 3,
+    day:"Wensday",
     startTime: 21,
     startAndFinishTime: "21:00 - 22:00",
     duration: 1,
@@ -296,6 +316,7 @@ var termin21 = {
     nivo: "lvl 1", 
     max: 10,
     current: 4,
+    day:"Thursday",
     startTime: 10,
     startAndFinishTime: "10:00 - 11:00",
     duration: 1,
@@ -308,6 +329,7 @@ var termin22 = {
     nivo: "lvl 1", 
     max: 10,
     current: 7,
+    day:"Thursday",
     startTime: 12,
     startAndFinishTime: "12:00 - 13:00",
     duration: 1,
@@ -320,6 +342,7 @@ var termin23 = {
     nivo: "lvl 5", 
     max: 10,
     current: 10,
+    day:"Thursday",
     startTime: 16,
     startAndFinishTime: "16:00 - 17:00",
     duration: 1,
@@ -332,6 +355,7 @@ var termin24 = {
     nivo: "lvl 4", 
     max: 10,
     current: 9,
+    day:"Thursday",
     startTime: 17,
     startAndFinishTime: "18:00 - 19:00",
     duration: 1,
@@ -343,6 +367,7 @@ var termin25 = {
     nivo: "lvl 5", 
     max: 10,
     current: 3,
+    day:"Thursday",
     startTime: 19,
     startAndFinishTime: "20:00 - 21:00",
     duration: 1,
@@ -355,6 +380,7 @@ var termin26 = {
     nivo: "lvl 5", 
     max: 10,
     current: 3,
+    day:"Thursday",
     startTime: 21,
     startAndFinishTime: "21:00 - 22:00",
     duration: 1,
@@ -368,6 +394,7 @@ var termin27 = {
     nivo: "lvl 2", 
     max: 10,
     current: 3,
+    day:"Friday",
     startTime: 10,
     startAndFinishTime: "10:00 - 11:00",
     duration: 1,
@@ -380,6 +407,7 @@ var termin28 = {
     nivo: "lvl 2", 
     max: 10,
     current: 3,
+    day:"Friday",
     startTime: 11,
     startAndFinishTime: "11:00 - 12:00",
     duration: 1,
@@ -392,6 +420,7 @@ var termin29 = {
     nivo: "lvl 2", 
     max: 10,
     current: 10,
+    day:"Friday",
     startTime: 14,
     startAndFinishTime: "14:00 - 15:00",
     duration: 1,
@@ -404,6 +433,7 @@ var termin30 = {
     nivo: "lvl 5", 
     max: 10,
     current: 9,
+    day:"Friday",
     startTime: 17,
     startAndFinishTime: "18:00 - 19:00",
     duration: 1,
@@ -416,6 +446,7 @@ var termin31 = {
     nivo: "lvl 5", 
     max: 10,
     current: 3,
+    day:"Friday",
     startTime: 19,
     startAndFinishTime: "20:00 - 21:00",
     duration: 1,
@@ -428,6 +459,7 @@ var termin32 = {
     nivo: "lvl 4", 
     max: 10,
     current: 3,
+    day:"Friday",
     startTime: 21,
     startAndFinishTime: "21:00 - 22:00",
     duration: 1,
@@ -442,6 +474,7 @@ var termin33 = {
     nivo: "lvl 2", 
     max: 10,
     current: 6,
+    day:"Saturday",
     startTime: 10,
     startAndFinishTime: "10:00 - 11:00",
     duration: 1,
@@ -454,6 +487,7 @@ var termin34 = {
     nivo: "lvl 2", 
     max: 10,
     current: 3,
+    day:"Saturday",
     startTime: 12,
     startAndFinishTime: "12:00 - 13:00",
     duration: 1,
@@ -466,6 +500,7 @@ var termin35 = {
     nivo: "lvl 1", 
     max: 10,
     current: 10,
+    day:"Saturday",
     startTime: 13,
     startAndFinishTime: "13:00 - 14:00",
     duration: 1,
@@ -478,6 +513,7 @@ var termin36 = {
     nivo: "lvl 1", 
     max: 10,
     current: 6,
+    day:"Saturday",
     startTime: 15,
     startAndFinishTime: "15:00 - 16:00",
     duration: 1,
@@ -490,6 +526,7 @@ var termin37 = {
     nivo: "lvl 5", 
     max: 10,
     current: 10,
+    day:"Saturday",
     startTime: 18,
     startAndFinishTime: "18:00 - 19:00",
     duration: 1,
@@ -502,6 +539,7 @@ var termin38 = {
     nivo: "lvl 5", 
     max: 10,
     current: 7,
+    day:"Saturday",
     startTime: 19,
     startAndFinishTime: "19:00 - 20:00",
     duration: 1,
@@ -514,6 +552,7 @@ var termin39 = {
     nivo: "lvl 5", 
     max: 10,
     current: 10,
+    day:"Saturday",
     startTime: 20,
     startAndFinishTime: "20:00 - 21:00",
     duration: 1,
@@ -526,6 +565,7 @@ var termin40 = {
     nivo: "lvl 4", 
     max: 10,
     current: 3,
+    day:"Saturday",
     startTime: 21,
     startAndFinishTime: "21:00 - 22:00",
     duration: 1,
@@ -539,6 +579,7 @@ var termin41 = {
     nivo: "lvl 5", 
     max: 10,
     current: 3,
+    day:"Sunday",
     startTime: 18,
     startAndFinishTime: "18:00 - 19:00",
     duration: 1,
@@ -551,6 +592,7 @@ var termin42 = {
     nivo: "lvl 4", 
     max: 10,
     current: 7,
+    day:"Sunday",
     startTime: 19,
     startAndFinishTime: "19:00 - 20:00",
     duration: 1,
@@ -563,6 +605,7 @@ var termin43 = {
     nivo: "lvl 5", 
     max: 10,
     current: 10,
+    day:"Sunday",
     startTime: 20,
     startAndFinishTime: "20:00 - 21:00",
     duration: 1,
@@ -575,6 +618,7 @@ var termin44 = {
     nivo: "lvl 5", 
     max: 10,
     current: 3,
+    day:"Sunday",
     startTime: 21,
     startAndFinishTime: "21:00 - 22:00",
     duration: 1,
@@ -1002,9 +1046,64 @@ function insertMyReservations(){
 }
 function quitReservation(id){
     loadLocalStorage();
+
     let td = id.closest("td").id;
     let index = "[id='"+ td + "']";
     let a = document.querySelector(index).children;
+
+    //provera da li moze da odustane
+    //nedelja - 0
+    //ponedeljak subota - 6
+
+    var r = /\d+/;
+    let param = findIndex((td.match(r)));
+    //console.log (termini[param]);
+    var today = new Date();
+    
+    let danasnjiDan = today.getDay();
+    //console.log(danasnjiDan);
+    if(danasnjiDan == 0){
+        danasnjiDan = 7;
+    }
+   
+    //console.log(today.getDay());
+    let danTreninga = -1;
+    switch(termini[param].day) {
+        case 'Monday':
+            danTreninga = 1;
+            break;
+        case 'Tuesday':
+            danTreninga = 2;
+            break;
+        case 'Wensday':
+            danTreninga = 3;
+            break;
+        case 'Thursday':
+            danTreninga = 4;
+            break;
+        case 'Friday':
+            danTreninga = 5;
+            break;
+        case 'Saturday':
+            danTreninga = 6;
+            break;
+        case 'Sunday':
+            danTreninga = 7;
+            break;
+        default:
+          // code block
+      }
+      //console.log(danTreninga);
+      //console.log(danasnjiDan);
+      //console.log(termini[param].startTime);
+      //console.log(today.getHours()-1);
+      //console.log(today.getMinutes());
+
+      if(danasnjiDan == danTreninga && (termini[param].startTime == (today.getHours()+1)) && today.getMinutes()>30){
+        Swal.fire('Ovaj termin nije moguce otkazati zato sto krece za manje od 30 min.');
+        return;
+        
+      }
     //console.log(a);
     //a[2].remove();
     a[0].style.visibility="hidden";
@@ -1014,13 +1113,12 @@ function quitReservation(id){
     a[0].style.visibility="hidden";
         
 
-    var r = /\d+/;
-    let param = findIndex((td.match(r)));
+
     //console.log(termini[param].subs);
     termini[param].current--;
     let temp = termini[param].subs.indexOf(localStorage.getItem("username"));
     termini[param].subs.splice(temp, 1);
-    Swal.fire('Izbaceni ste iz ovog termina.')
+    Swal.fire('Izbaceni ste iz ovog termina.');
     //console.log(termini[param].subs);
     saveLocalStorage();
 }
